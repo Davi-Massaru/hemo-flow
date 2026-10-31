@@ -1,0 +1,11 @@
+.env
+*.pyc
+__pycache__/
+.pytest_cache/
+node_modules/
+data/
+java/pex/target/
+docs/build154-*.xml
+docs/runtime-probe.json
+evidence/*.json
+!evidence/acceptance.json
