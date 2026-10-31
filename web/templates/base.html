@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HemoFlow · {{ title }}</title><link rel="stylesheet" href="{{ url_for('static',filename='app.css') }}">
+<script defer src="{{ url_for('static',filename='vendor/echarts/echarts.min.js') }}"></script>
+<script defer src="{{ url_for('static',filename='app.js') }}"></script></head>
+<body data-locale-url="{{ url_for('static',filename='locales/en.json') }}">
+<a class="skip-link" href="#content">{{ t('skip_content') }}</a>
+<aside><a class="brand" href="{{ url_for('panel') }}"><span class="brand-mark" aria-hidden="true">✚</span> HemoFlow<span class="brand-dot">.</span></a>
+<small class="network-label">{{ t('app.network') }}</small>
+<nav aria-label="{{ t('app.network') }}">{% for key,info in pages.items() if key!='audit' or user.role in ('admin','auditor') %}
+<a class="{{ 'active' if key==page }}" {% if key==page %}aria-current="page"{% endif %} href="{{ request.script_root }}{{ info[1] }}"><span class="nav-index" aria-hidden="true">{{ '%02d'|format(loop.index) }}</span>{{ t('nav.'+key) }}</a>{% endfor %}</nav>
+<footer><span class="system-dot" aria-hidden="true"></span> InterSystems IRIS<small>{{ t('app.tagline') }}</small></footer></aside>
+<main id="content"><header><div><div class="eyebrow">{{ t('app.network') }}</div><h1>{{ title }}</h1><p class="subtitle">{{ t('subtitle.'+page) }}</p></div>
+<div class="identity"><span class="avatar" aria-hidden="true">{{ user.name[:1]|upper }}</span><div>{{ user.name|display_name }}<small>{{ user.role|label }} · {{ user.scope }}</small></div><form method="post" action="{{ url_for('logout') }}"><input type="hidden" name="csrf" value="{{ csrf }}"><button>{{ t('sign_out') }}</button></form></div></header>
+<div class="banner {{ 'demo-banner' if demo }}">{{ t('demo_banner' if demo else 'live_banner') }}</div>
+{% for category,msg in get_flashed_messages(with_categories=true) %}<div class="notice {{ category }}" role="{{ 'alert' if category=='critical' else 'status' }}">{% if category=='critical' %}<b aria-hidden="true">!</b> {% endif %}{{ msg|label }}</div>{% endfor %}
+{% block content %}{% endblock %}
+<footer class="page-footer">HemoFlow · {{ t('app.network') }}<span>{{ now }} · UTC</span></footer></main></body></html>

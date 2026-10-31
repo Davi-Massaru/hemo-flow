@@ -1,0 +1,5 @@
+zn "USER"
+do $system.OBJ.Export("EnsLib.PEX.Common.cls,EnsLib.PEX.BusinessOperation.cls,EnsLib.Workflow.TaskResponse.cls,EnsLib.Workflow.Operation.cls,EnsLib.Workflow.RoleDefinition.cls,EnsLib.Workflow.UserDefinition.cls,%SYS.Task.Definition.cls,%SYS.TaskSuper.cls,%SYS.Python.WSGI.cls,%Library.EnsembleMgr.cls","/opt/hemoflow/docs/build154-api.xml")
+zn "%SYS"
+do $system.OBJ.Export("Security.Applications.cls","/opt/hemoflow/docs/build154-security.xml")
+halt

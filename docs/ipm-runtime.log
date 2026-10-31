@@ -1,0 +1,276 @@
+
+Node: 138e468a1e75, Instance: IRIS
+
+USER>
+
+USER>
+{
+  "hosts": [
+    [
+      32,
+      "FederatedInventoryOperation",
+      "1195",
+      2,
+      2,
+      "HemoFlow.FederatedInventoryOperation",
+      "MessageHeaderHandler",
+      "H\u0001$$^MessageHeaderHandler+238^HemoFlow.FederatedInventoryOperation.1 +2:\u001d\u0001$$^OnTask+42^Ens.Host.1 +1:\u001b\u0001$$^Start+62^Ens.Job.1 +2:!\u0001DO^Start+14^%SYS.Ensemble.1 +1:",
+      "0 \u0000\u00f8\u0002\u0001\u0004\u0004\u00a8\u001f\u0000d\u0001\u0001<GATEWAY> java.lang.RuntimeException com.intersystems.jdbc.IRIS.instanceMethodCommon(IRIS.java:2280) java.sql.SQLException: Exception thrown on server (code = 1217) : <THROW> *%Net.Remote.Exception <GATEWAY> java.lang.IllegalStateException com.hemoflow.pex.FederatedInventoryAdapter.Query(FederatedInventoryAdapter.java:31) Inventory unavailable: HTTP 422\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0082\u0001\u0001\u0001\u0006\u0001USER\u0000w\u0001\u0001*\u0001e^OnAsStatus+1^%Net.Remote.Exception.1^1/\u0001e^AsStatus+1^%Exception.AbstractException.1^10\u0001e^OnMessage+8^EnsLib.PEX.BusinessOperation.1^1.\u0001e^MessageHandler+5^Ens.BusinessOperation.1^1D\u0001e^MessageHeaderHandler+24^HemoFlow.FederatedInventoryOperation.1^1\u001a\u0001e^OnTask+42^Ens.Host.1^1\u0018\u0001e^Start+62^Ens.Job.1^2\u001e\u0001e^Start+14^%SYS.Ensemble.1^1$\u0001d^StartEnsembleJob+7^|\"%SYS\"|STU^1\u0007\u0001d^^^0",
+      "ERROR #8104: Gateway Exception: <GATEWAY> java.lang.RuntimeException com.intersystems.jdbc.IRIS.instanceMethodCommon(IRIS.java:2280) java.sql.SQLException: Exception thrown on server (code = 1217) : <THROW> *%Net.Remote.Exception <GATEWAY> java.lang.IllegalStateException com.hemoflow.pex.FederatedInventoryAdapter.Query(FederatedInventoryAdapter.java:31) Inventory unavailable: HTTP 422",
+      "2026-10-29 12:39:33.698",
+      "",
+      2
+    ],
+    [
+      31,
+      "FederatedInventoryOperation",
+      "1196",
+      2,
+      "",
+      "Ens.Job",
+      "Start",
+      "",
+      1,
+      "ConfigItem 'FederatedInventoryOperation' (HemoFlow.FederatedInventoryOperation) started in job 1196",
+      "2026-10-29 12:39:33.6",
+      "",
+      4
+    ],
+    [
+      30,
+      "FederatedInventoryOperation",
+      "1195",
+      2,
+      "",
+      "Ens.Job",
+      "Start",
+      "",
+      1,
+      "ConfigItem 'FederatedInventoryOperation' (HemoFlow.FederatedInventoryOperation) started in job 1195",
+      "2026-10-29 12:39:33.6",
+      "",
+      4
+    ],
+    [
+      29,
+      "CampaignCreationOperation",
+      "1180",
+      2,
+      "",
+      "Ens.Job",
+      "Start",
+      "",
+      1,
+      "ConfigItem 'CampaignCreationOperation' (EnsLib.PEX.BusinessOperation) started in job 1180",
+      "2026-10-29 12:39:33.502",
+      "",
+      4
+    ],
+    [
+      28,
+      "Ens.MonitorService",
+      "1190",
+      1,
+      "",
+      "Ens.Job",
+      "Start",
+      "",
+      1,
+      "ConfigItem 'Ens.MonitorService' started in job 1190",
+      "2026-10-29 12:39:32.428",
+      "",
+      4
+    ],
+    [
+      27,
+      "AIReadOperation",
+      "1174",
+      1,
+      "",
+      "Ens.Job",
+      "Start",
+      "",
+      1,
+      "ConfigItem 'AIReadOperation' (HemoFlow.AIReadOperation) started in job 1174",
+      "2026-10-29 12:39:32.404",
+      "",
+      4
+    ],
+    [
+      26,
+      "Ens.ScheduleHandler",
+      "1191",
+      1,
+      1,
+      "Ens.Director",
+      "UpdateProduction",
+      "",
+      1,
+      "Production 'HemoFlow.Production' is up-to-date.",
+      "2026-10-29 12:39:32.349",
+      "",
+      4
+    ],
+    [
+      25,
+      "Ens.ScheduleHandler",
+      "1191",
+      1,
+      1,
+      "Ens.Director",
+      "UpdateProduction",
+      "",
+      1,
+      "Production 'HemoFlow.Production' updating... (UpdateTimeout: 10s, Force flag: 0)",
+      "2026-10-29 12:39:32.343",
+      "",
+      4
+    ],
+    [
+      24,
+      "",
+      "746",
+      1,
+      "",
+      "Ens.Director",
+      "StartProduction",
+      "",
+      1,
+      "Production 'HemoFlow.Production' started.",
+      "2026-10-29 12:39:32.32",
+      "",
+      4
+    ],
+    [
+      23,
+      "TransferBPL",
+      "1200",
+      1,
+      "",
+      "Ens.Job",
+      "Start",
+      "",
+      1,
+      "ConfigItem 'TransferBPL' (Ens.Actor) started in job 1200",
+      "2026-10-29 12:39:32.318",
+      "",
+      4
+    ],
+    [
+      22,
+      "TransferBPL",
+      "1197",
+      1,
+      "",
+      "Ens.Job",
+      "Start",
+      "",
+      1,
+      "ConfigItem 'TransferBPL' (Ens.Actor) started in job 1197",
+      "2026-10-29 12:39:32.316",
+      "",
+      4
+    ],
+    [
+      21,
+      "Approvals",
+      "1177",
+      "",
+      "",
+      "Ens.Job",
+      "Start",
+      "",
+      1,
+      "ConfigItem 'Approvals' (EnsLib.Workflow.Operation) started in job 1177",
+      "2026-10-29 12:39:32.312",
+      "",
+      4
+    ]
+  ],
+  "workflow_columns": [
+    [
+      "ID"
+    ],
+    [
+      "%Action"
+    ],
+    [
+      "%Actions"
+    ],
+    [
+      "%FormFields"
+    ],
+    [
+      "%FormTemplate"
+    ],
+    [
+      "%Message"
+    ],
+    [
+      "%Priority"
+    ],
+    [
+      "%RoleName"
+    ],
+    [
+      "%Status"
+    ],
+    [
+      "%Subject"
+    ],
+    [
+      "%UserName"
+    ],
+    [
+      "%UserRanking"
+    ],
+    [
+      "%UserTitle"
+    ],
+    [
+      "TaskStatus_AssignedTo"
+    ],
+    [
+      "TaskStatus_IsComplete"
+    ],
+    [
+      "TaskStatus_Request"
+    ],
+    [
+      "TaskStatus_ResponseToken"
+    ],
+    [
+      "TaskStatus_RoleName"
+    ],
+    [
+      "TaskStatus_SessionId"
+    ],
+    [
+      "TaskStatus_Source"
+    ],
+    [
+      "TaskStatus_TimeCompleted"
+    ],
+    [
+      "TaskStatus_TimeCreated"
+    ]
+  ],
+  "ml_models": [],
+  "vector": [
+    [
+      1.0
+    ]
+  ],
+  "ttl_classes": [
+    [
+      "HemoFlow.DecisionContext"
+    ],
+    [
+      "HemoFlow.PendingInvitation"
+    ]
+  ]
+}
+PROVISION_OK
+PEX_RESULT {'parameter': [{'name': 'centerId', 'valueString': 'HEMO-B'}, {'name': 'componentCode', 'valueCode': 'RED_BLOOD_CELLS'}, {'name': 'bloodType', 'valueCode': 'O-'}, {'name': 'availableUnits', 'valueInteger': 16}, {'name': 'transferableUnits', 'valueInteger': 12}, {'name': 'observedAt', 'valueInstant': '2026-10-29T12:39:51Z'}, {'name': 'dataVersion', 'valueString': '0:16'}, {'name': 'responseStatus', 'valueCode': 'AVAILABLE'}, {'name': 'handlingLeadTimeHours', 'valueInteger': 4}, {'name': 'expiryBucket', 'part': [{'name': 'expiresAt', 'valueDateTime': '2026-11-01T03:13:35Z'}, {'name': 'daysUntilExpiry', 'valueInteger': 2}, {'name': 'units', 'valueInteger': 6}]}, {'name': 'expiryBucket', 'part': [{'name': 'expiresAt', 'valueDateTime': '2026-11-13T03:13:35Z'}, {'name': 'daysUntilExpiry', 'valueInteger': 14}, {'name': 'units', 'valueInteger': 6}]}, {'name': 'usableExpiryBucket', 'part': [{'name': 'expiresAt', 'valueDateTime': '2026-11-01T03:13:35Z'}, {'name': 'units', 'valueInteger': 6}]}, {'name': 'usableExpiryBucket', 'part': [{'name': 'expiresAt', 'valueDateTime': '2026-11-13T03:13:35Z'}, {'name': 'units', 'valueInteger': 10}]}], 'resourceType': 'Parameters'}
+
+USER>

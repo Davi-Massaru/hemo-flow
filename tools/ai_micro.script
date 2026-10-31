@@ -1,0 +1,14 @@
+zn "USER"
+write "AI_MICRO configuration",!
+set config=##class(%DynamicObject).%FromJSON(##class(HemoFlow.AIHubDecisionOperation).Configuration())
+write "AI_MICRO provider",!
+set provider=##class(%AI.Provider).Create("openai",config)
+write "AI_MICRO agent",!
+set agent=##class(HemoFlow.DecisionAgent).%New(provider)
+set agent.Model=config.%Get("model"),agent.MaxIterations=8
+write "AI_MICRO init",!
+write agent.%Init(),!
+write "AI_MICRO session",!
+set session=agent.CreateSession({"timeout_ms":60000,"max_tokens":900,"temperature":0})
+write "AI_MICRO ready",!
+halt

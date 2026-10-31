@@ -1,0 +1,176 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HemoFlow AI Hub Decision v5",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "request_id",
+    "decision",
+    "reason",
+    "evidence_ids",
+    "requires_approval"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "request_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decision": {
+      "enum": [
+        "REQUEST_TRANSFER",
+        "REQUEST_CAMPAIGN",
+        "NO_ACTION"
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 8
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "requires_approval": {
+      "type": "boolean"
+    },
+    "source_center_id": {
+      "type": "string"
+    },
+    "target_center_id": {
+      "type": "string"
+    },
+    "requesting_center_id": {
+      "type": "string"
+    },
+    "component": {
+      "type": "string"
+    },
+    "blood_type": {
+      "type": "string"
+    },
+    "requested_units": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "need_by": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "inventory_observed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "partner_id": {
+      "type": "string"
+    },
+    "target_units": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "campaign_window_start": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "campaign_window_end": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expected_available_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "decision": {
+            "const": "REQUEST_TRANSFER"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "source_center_id",
+          "target_center_id",
+          "component",
+          "blood_type",
+          "requested_units",
+          "need_by",
+          "inventory_observed_at"
+        ],
+        "properties": {
+          "requires_approval": {
+            "const": true
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "decision": {
+            "const": "REQUEST_CAMPAIGN"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "requesting_center_id",
+          "partner_id",
+          "component",
+          "blood_type",
+          "target_units",
+          "campaign_window_start",
+          "campaign_window_end",
+          "expected_available_at",
+          "need_by"
+        ],
+        "properties": {
+          "requires_approval": {
+            "const": true
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "decision": {
+            "const": "NO_ACTION"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "requires_approval": {
+            "const": false
+          }
+        },
+        "not": {
+          "anyOf": [
+            {
+              "required": [
+                "requested_units"
+              ]
+            },
+            {
+              "required": [
+                "partner_id"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

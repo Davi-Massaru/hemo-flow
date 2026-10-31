@@ -1,0 +1,3 @@
+zn "%SYS"
+do ##class(%SYS.Python).Import("runpy")."run_path"("/opt/hemoflow/tools/db_diagnose.py")
+halt

@@ -1,0 +1,584 @@
+{
+  "observed_at": "2026-10-29T12:45:29Z",
+  "seed": {
+    "id": "hemoflow-demo-v1",
+    "status": "READY",
+    "epoch": "2026-10-29T00:00:00Z",
+    "version": 1,
+    "synthetic": true,
+    "created_at": "2026-10-29T02:04:17Z",
+    "updated_at": "2026-10-29T02:50:06Z",
+    "counts": {
+      "centers": 3,
+      "partners": 6,
+      "history_days": 180,
+      "consumption_rows": 540,
+      "experiences": 40,
+      "users": 13
+    },
+    "model": {
+      "version": "2026-10-29T02:50:06Z",
+      "provider": "%AutoML",
+      "mae": 1.8458238329206194,
+      "baseline_mae": 4.928571428571429,
+      "validation_rows": 84
+    },
+    "manifest_hash": "655e92bffd7dc0d36265e9157a9a2fdcbbd6db32e32bc523007f40bd621ddc69"
+  },
+  "model": {
+    "version": "2026-10-29T02:50:06Z",
+    "provider": "%AutoML",
+    "mae": 1.8458238329206194,
+    "baseline_mae": 4.928571428571429,
+    "validation_rows": 84
+  },
+  "acceptance": [
+    {
+      "case": "SEED_COUNTS_AND_IDEMPOTENCY",
+      "status": "PASSED"
+    },
+    {
+      "case": "REQUEST_TRANSFER_FULL_WORKFLOW",
+      "status": "PASSED",
+      "correlation_id": "80834013-99f7-4343-8a8b-25b706e369d4",
+      "received": 12
+    },
+    {
+      "case": "REQUEST_CAMPAIGN_FULL_WORKFLOW",
+      "status": "PASSED",
+      "correlation_id": "1839b896-3cbb-4317-9b55-d098a68c588a",
+      "released": 15
+    },
+    {
+      "case": "NO_ACTION",
+      "status": "PASSED"
+    },
+    {
+      "case": "OFFLINE",
+      "status": "PASSED"
+    },
+    {
+      "case": "STOCKOUT",
+      "status": "PASSED"
+    },
+    {
+      "case": "EXPIRY_BLOCKS_TRANSFER",
+      "status": "PASSED"
+    },
+    {
+      "case": "DECLINED",
+      "status": "PASSED"
+    },
+    {
+      "case": "EXPIRED_INVITE",
+      "status": "PASSED"
+    },
+    {
+      "case": "AUTOMATIC_TTL_24H_TWO_CLASSES_AND_LATE_409",
+      "status": "PASSED"
+    },
+    {
+      "case": "SINGLE_EXPIRATION_REASSESSMENT",
+      "status": "PASSED"
+    },
+    {
+      "case": "SAFE_RESTORE_PRESERVES_AUDIT_AND_LEDGER",
+      "status": "PASSED"
+    }
+  ],
+  "persisted_decisions": {
+    "80834013-99f7-4343-8a8b-25b706e369d4": "DECIDED",
+    "1839b896-3cbb-4317-9b55-d098a68c588a": "DECIDED"
+  },
+  "counts": {
+    "NetworkCenter": 3,
+    "Partner": 6,
+    "User": 14,
+    "DecisionAudit": 31,
+    "EventAudit": 332,
+    "InvitationLedger": 8
+  },
+  "consumption_rows": 540,
+  "campaign_experiences": 40,
+  "remote_status": {
+    "HEMO-A": {
+      "safe_to_restore": true,
+      "seeded": true
+    },
+    "HEMO-B": {
+      "safe_to_restore": true,
+      "seeded": true
+    },
+    "HEMO-C": {
+      "safe_to_restore": true,
+      "seeded": true
+    }
+  },
+  "vector_top_k": {
+    "results": [
+      {
+        "campaign_id": "DEMO-EXP-003",
+        "partner_id": "PARTNER-3",
+        "summary": "NGO blood donation campaign, red cells O negative shortage, Sao Paulo region, 22 usable units released after processing, 17 used before expiry.",
+        "released_usable": 22,
+        "score": 0.8379595548107727
+      },
+      {
+        "campaign_id": "DEMO-EXP-015",
+        "partner_id": "PARTNER-3",
+        "summary": "NGO blood donation campaign, red cells O negative shortage, Sao Paulo region, 24 usable units released after processing, 21 used before expiry.",
+        "released_usable": 24,
+        "score": 0.8344992839127753
+      },
+      {
+        "campaign_id": "DEMO-EXP-033",
+        "partner_id": "PARTNER-3",
+        "summary": "NGO blood donation campaign, red cells O negative shortage, Sao Paulo region, 22 usable units released after processing, 15 used before expiry.",
+        "released_usable": 22,
+        "score": 0.8338643801132264
+      },
+      {
+        "campaign_id": "DEMO-EXP-027",
+        "partner_id": "PARTNER-3",
+        "summary": "NGO blood donation campaign, red cells O negative shortage, Sao Paulo region, 26 usable units released after processing, 17 used before expiry.",
+        "released_usable": 26,
+        "score": 0.8328546051290825
+      },
+      {
+        "campaign_id": "DEMO-EXP-001",
+        "partner_id": "PARTNER-1",
+        "summary": "UNIVERSITY blood donation campaign, red cells O negative shortage, Sao Paulo region, 20 usable units released after processing, 15 used before expiry.",
+        "released_usable": 20,
+        "score": 0.8323286906317648
+      }
+    ],
+    "model": "BAAI/bge-small-en-v1.5",
+    "dimension": 384,
+    "latency_ms": 815
+  },
+  "sessions": [
+    {
+      "decision_id": "80834013-99f7-4343-8a8b-25b706e369d4",
+      "decision": {
+        "schema_version": "1.0",
+        "request_id": "80834013-99f7-4343-8a8b-25b706e369d4",
+        "decision": "REQUEST_TRANSFER",
+        "reason": "Forecast demand for O- red blood cells is 23 units in the next 7 days. Inventory shows HEMO-B has 16 available units with 12 transferable, while HEMO-A has only 8 available units with 4 transferable. To meet the requested 12 units by 2026-11-05, a transfer from HEMO-B to HEMO-A is feasible and necessary.",
+        "evidence_ids": [
+          "TOOL:80834013-99f7-4343-8a8b-25b706e369d4:forecast_demand",
+          "TOOL:80834013-99f7-4343-8a8b-25b706e369d4:query_network_inventory",
+          "TOOL:80834013-99f7-4343-8a8b-25b706e369d4:search_campaign_experience",
+          "TOOL:80834013-99f7-4343-8a8b-25b706e369d4:list_campaign_partners",
+          "TOOL:80834013-99f7-4343-8a8b-25b706e369d4:get_active_campaigns"
+        ],
+        "requires_approval": true,
+        "source_center_id": "HEMO-B",
+        "target_center_id": "HEMO-A",
+        "component": "RED_BLOOD_CELLS",
+        "blood_type": "O-",
+        "requested_units": 12,
+        "need_by": "2026-11-05T03:12:21Z",
+        "inventory_observed_at": "2026-10-29T03:12:24Z"
+      },
+      "session_id": "16",
+      "stats": {
+        "current_context_tokens": 1972,
+        "model_context_size": 1047576,
+        "total_cache_creation_tokens": 0,
+        "total_cache_read_tokens": 1152,
+        "total_completion_tokens": 577,
+        "total_interactions": 2,
+        "total_llm_duration_ms": 7806,
+        "total_prompt_tokens": 3415,
+        "total_reasoning_tokens": 0,
+        "total_tool_calls": 5,
+        "total_tool_duration_ms": 2201
+      },
+      "usage": {
+        "cache_read_tokens": 1152,
+        "completion_tokens": 367,
+        "prompt_tokens": 2334,
+        "reasoning_tokens": 0,
+        "total_tokens": 2701
+      },
+      "model": "gpt-4.1-mini",
+      "repair_attempts": 0,
+      "provider": "openai",
+      "tools_called": [
+        "forecast_demand",
+        "get_active_campaigns",
+        "list_campaign_partners",
+        "query_network_inventory",
+        "search_campaign_experience"
+      ],
+      "estimated_usd": null
+    },
+    {
+      "decision_id": "1839b896-3cbb-4317-9b55-d098a68c588a",
+      "decision": {
+        "schema_version": "1.0",
+        "request_id": "1839b896-3cbb-4317-9b55-d098a68c588a",
+        "decision": "REQUEST_CAMPAIGN",
+        "reason": "Forecast demand for O- red blood cells is 23 units within 7 days, exceeding current available transferable inventory of 4 units at HEMO-A. Both partners PARTNER-1 and PARTNER-2 have capacity to organize campaigns with target units of 15 each, matching previous successful campaigns by PARTNER-1 with 20 usable units released and 15 used before expiry. No active campaigns currently available. Campaign requested to meet forecasted demand and ensure supply by need date.",
+        "evidence_ids": [
+          "TOOL:1839b896-3cbb-4317-9b55-d098a68c588a:forecast_demand",
+          "TOOL:1839b896-3cbb-4317-9b55-d098a68c588a:query_network_inventory",
+          "TOOL:1839b896-3cbb-4317-9b55-d098a68c588a:search_campaign_experience",
+          "TOOL:1839b896-3cbb-4317-9b55-d098a68c588a:list_campaign_partners",
+          "TOOL:1839b896-3cbb-4317-9b55-d098a68c588a:get_active_campaigns"
+        ],
+        "requires_approval": true,
+        "requesting_center_id": "HEMO-A",
+        "partner_id": "PARTNER-1",
+        "component": "RED_BLOOD_CELLS",
+        "blood_type": "O-",
+        "target_units": 15,
+        "campaign_window_start": "2026-10-31T03:12:37Z",
+        "campaign_window_end": "2026-10-31T11:12:37Z",
+        "expected_available_at": "2026-11-02T11:12:37Z",
+        "need_by": "2026-11-05T03:12:37Z"
+      },
+      "session_id": "17",
+      "stats": {
+        "current_context_tokens": 2573,
+        "model_context_size": 1047576,
+        "total_cache_creation_tokens": 0,
+        "total_cache_read_tokens": 4352,
+        "total_completion_tokens": 1015,
+        "total_interactions": 3,
+        "total_llm_duration_ms": 8826,
+        "total_prompt_tokens": 7051,
+        "total_reasoning_tokens": 0,
+        "total_tool_calls": 5,
+        "total_tool_duration_ms": 2110
+      },
+      "usage": {
+        "cache_read_tokens": 2816,
+        "completion_tokens": 413,
+        "prompt_tokens": 3035,
+        "reasoning_tokens": 0,
+        "total_tokens": 3448
+      },
+      "model": "gpt-4.1-mini",
+      "repair_attempts": 1,
+      "provider": "openai",
+      "tools_called": [
+        "forecast_demand",
+        "get_active_campaigns",
+        "list_campaign_partners",
+        "query_network_inventory",
+        "search_campaign_experience"
+      ],
+      "estimated_usd": null
+    }
+  ],
+  "native_message_columns": [
+    "ID",
+    "Banked",
+    "BusinessProcessId",
+    "CorrespondingMessageId",
+    "Description",
+    "ErrorStatus",
+    "FIFOMessageGroup",
+    "Invocation",
+    "IsError",
+    "MessageBodyClassName",
+    "MessageBodyId",
+    "Priority",
+    "Resent",
+    "ReturnQueueName",
+    "SessionId",
+    "SourceBusinessType",
+    "SourceConfigName",
+    "Status",
+    "SuperSession",
+    "TargetBusinessType",
+    "TargetConfigName",
+    "TargetQueueName",
+    "TimeCreated",
+    "TimeProcessed",
+    "Type"
+  ],
+  "message_trace": [
+    [
+      1048,
+      1048,
+      "InventoryEventService",
+      "CampaignCreationOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      1030,
+      1030,
+      "InventoryEventService",
+      "CampaignCreationOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      988,
+      988,
+      "InventoryEventService",
+      "CampaignCreationOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      976,
+      976,
+      "InventoryEventService",
+      "CampaignCreationOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      946,
+      944,
+      "DomainOperation",
+      "CampaignBPL",
+      "HemoFlow.Response"
+    ],
+    [
+      944,
+      944,
+      "InventoryEventService",
+      "CampaignBPL",
+      "HemoFlow.Message"
+    ],
+    [
+      938,
+      932,
+      "DomainOperation",
+      "CampaignBPL",
+      "HemoFlow.Response"
+    ],
+    [
+      934,
+      934,
+      "InventoryEventService",
+      "CampaignCreationOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      932,
+      932,
+      "InventoryEventService",
+      "CampaignBPL",
+      "HemoFlow.Message"
+    ],
+    [
+      910,
+      910,
+      "InventoryEventService",
+      "AIHubDecisionOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      876,
+      876,
+      "InventoryEventService",
+      "AIHubDecisionOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      846,
+      846,
+      "InventoryEventService",
+      "AIHubDecisionOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      798,
+      798,
+      "InventoryEventService",
+      "AIHubDecisionOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      788,
+      784,
+      "DomainOperation",
+      "CampaignBPL",
+      "HemoFlow.Response"
+    ],
+    [
+      786,
+      786,
+      "InventoryEventService",
+      "FHIRTransferOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      784,
+      784,
+      "InventoryEventService",
+      "CampaignBPL",
+      "HemoFlow.Message"
+    ],
+    [
+      782,
+      780,
+      "DomainOperation",
+      "CampaignBPL",
+      "HemoFlow.Response"
+    ],
+    [
+      780,
+      780,
+      "InventoryEventService",
+      "CampaignBPL",
+      "HemoFlow.Message"
+    ],
+    [
+      778,
+      772,
+      "DomainOperation",
+      "CampaignBPL",
+      "HemoFlow.Response"
+    ],
+    [
+      774,
+      774,
+      "InventoryEventService",
+      "CampaignCreationOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      772,
+      772,
+      "InventoryEventService",
+      "CampaignBPL",
+      "HemoFlow.Message"
+    ],
+    [
+      750,
+      750,
+      "InventoryEventService",
+      "AIHubDecisionOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      740,
+      734,
+      "DomainOperation",
+      "TransferBPL",
+      "HemoFlow.Response"
+    ],
+    [
+      738,
+      738,
+      "InventoryEventService",
+      "FHIRTransferOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      736,
+      736,
+      "InventoryEventService",
+      "FHIRTransferOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      734,
+      734,
+      "InventoryEventService",
+      "TransferBPL",
+      "HemoFlow.Message"
+    ],
+    [
+      732,
+      728,
+      "DomainOperation",
+      "TransferBPL",
+      "HemoFlow.Response"
+    ],
+    [
+      730,
+      730,
+      "InventoryEventService",
+      "FHIRTransferOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      728,
+      728,
+      "InventoryEventService",
+      "TransferBPL",
+      "HemoFlow.Message"
+    ],
+    [
+      726,
+      714,
+      "DomainOperation",
+      "TransferBPL",
+      "HemoFlow.Response"
+    ],
+    [
+      718,
+      718,
+      "InventoryEventService",
+      "FHIRTransferOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      714,
+      714,
+      "InventoryEventService",
+      "TransferBPL",
+      "HemoFlow.Message"
+    ],
+    [
+      692,
+      692,
+      "InventoryEventService",
+      "AIHubDecisionOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      636,
+      636,
+      "InventoryEventService",
+      "AIHubDecisionOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      626,
+      620,
+      "DomainOperation",
+      "TransferBPL",
+      "HemoFlow.Response"
+    ],
+    [
+      624,
+      624,
+      "InventoryEventService",
+      "FHIRTransferOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      622,
+      622,
+      "InventoryEventService",
+      "FHIRTransferOperation",
+      "HemoFlow.Message"
+    ],
+    [
+      620,
+      620,
+      "InventoryEventService",
+      "TransferBPL",
+      "HemoFlow.Message"
+    ],
+    [
+      618,
+      614,
+      "DomainOperation",
+      "TransferBPL",
+      "HemoFlow.Response"
+    ],
+    [
+      616,
+      616,
+      "InventoryEventService",
+      "FHIRTransferOperation",
+      "HemoFlow.Message"
+    ]
+  ]
+}

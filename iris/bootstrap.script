@@ -1,0 +1,11 @@
+zn "%SYS"
+write $zversion,!
+write ##class(%EnsembleMgr).EnableNamespace("USER",1),!
+zn "USER"
+do $system.OBJ.Load("/opt/hemoflow/iris/HemoFlow/Bootstrap.cls","ck")
+write ##class(HemoFlow.Bootstrap).Install(),!
+do ##class(HemoFlow.Bootstrap).Provision()
+write ##class(HemoFlow.Bootstrap).Web(),!
+do ##class(HemoFlow.Bootstrap).WebSQL()
+write ##class(Ens.Director).StartProduction("HemoFlow.Production"),!
+halt

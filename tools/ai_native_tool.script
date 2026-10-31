@@ -1,0 +1,14 @@
+zn "USER"
+do $system.OBJ.Load("/opt/hemoflow/tools/NativeToolProbe.cls","ck")
+set config=##class(%DynamicObject).%FromJSON(##class(HemoFlow.AIHubDecisionOperation).Configuration())
+set provider=##class(%AI.Provider).Create("openai",config)
+set agent=##class(%AI.Agent).%New(provider)
+set agent.Model=config.%Get("model"),agent.MaxIterations=4
+set agent.SystemPrompt="Call EchoNative with value ok, then return compact JSON without markdown fences."
+write "NATIVE_TOOL init ",agent.%Init(),!
+write "NATIVE_TOOL attach ",agent.UseToolSet("HemoFlow.NativeToolProbe"),!
+set session=agent.CreateSession({"timeout_ms":30000,"max_tokens":100})
+write "NATIVE_TOOL chat",!
+set result=agent.Chat(session,"Test the echo tool.")
+write "NATIVE_TOOL result ",result.Content,!
+halt

@@ -1,0 +1,11 @@
+zn "USER"
+do $system.OBJ.Export("%ML.AutoML.Provider.cls,%ML.AutoML.TrainedModel.cls,%ML.AutoML.TrainedModelModelInfo.cls","/tmp/hemoflow-eap154-original.xml")
+do ##class(%SYS.Python).Import("runpy")."run_path"("/opt/hemoflow/tools/patch_eap154.py")
+zn "%SYS"
+set map("Database")="USER"
+if '##class(Config.MapPackages).Exists("USER","%ML.AutoML") { set sc=##class(Config.MapPackages).Create("USER","%ML.AutoML",.map) if sc'=1 { write "ERROR: ",$system.Status.GetErrorText(sc),! halt } }
+zn "USER"
+set sc=$system.OBJ.Load("/tmp/hemoflow-eap154-patched.xml","ck")
+if sc'=1 { write "ERROR: ",$system.Status.GetErrorText(sc),! halt }
+write "EAP154_PATCH_APPLIED: USER namespace override; IRISLIB unchanged",!
+halt

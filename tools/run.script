@@ -1,0 +1,5 @@
+zn "USER"
+do ##class(HemoFlow.Bootstrap).PythonPath()
+do $system.OBJ.Load("/opt/hemoflow/tools/Probe.cls","ck")
+do ##class(HemoFlow.Probe).File("/opt/hemoflow/tools/check_runtime.py")
+halt

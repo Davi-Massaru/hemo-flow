@@ -1,0 +1,6 @@
+zn "USER"
+do $system.OBJ.Load("/opt/hemoflow/iris/HemoFlow/Bootstrap.cls","ck")
+do $system.OBJ.Load("/opt/hemoflow/iris/HemoFlow/Authentication.cls","ck")
+write ##class(HemoFlow.Bootstrap).Web(),!
+do ##class(HemoFlow.Bootstrap).WebSQL()
+halt

@@ -1,0 +1,4 @@
+zn "%SYS"
+write ##class(Security.Applications).Get("/hemoflow",.p),!
+zwrite p
+halt

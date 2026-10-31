@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "request_id": "REQ-009",
+  "decision": "NO_ACTION",
+  "reason": "Validated local coverage meets projected demand with no significant avoidable expiry risk",
+  "evidence_ids": [
+    "FCST-009",
+    "INV-A-009",
+    "CAMP-009"
+  ],
+  "requires_approval": false
+}

@@ -1,0 +1,6 @@
+zn "USER"
+write ##class(Ens.Director).StopProduction(10,1),!
+do $system.OBJ.LoadDir("/opt/hemoflow/iris/HemoFlow","ck",,1)
+write ##class(HemoFlow.Bootstrap).Web(),!
+write ##class(Ens.Director).StartProduction("HemoFlow.Production"),!
+halt

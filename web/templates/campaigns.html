@@ -1,0 +1,34 @@
+{% extends 'base.html' %}{% block content %}
+<nav class="section-nav" aria-label="{{ t('campaign_sections') }}">
+<a href="#planning">{{ t('campaign_planning') }}</a><a href="#invitations">{{ t('campaign_invitations') }}</a><a href="#outcomes">{{ t('campaign_outcomes') }}</a><a href="#history">{{ t('invitation_history') }}</a></nav>
+{% include 'charts.html' %}
+<section id="planning"><h2>{{ t('campaign_planning') }}</h2><p>{{ t('campaign_planning_note') }}</p>
+{% for c in campaigns if c.status not in ('COMPLETED','CANCELLED') %}
+<article class="card campaign-record" id="{{ c.id }}" data-record-group="{{ c.blood_type|default('O-') }}" data-record-centers="{{ c.scope }}">
+<div class="chart-heading"><h2>{{ c.scope }} · {{ c.blood_type|default('O-') }} · {{ c.partner_id }}</h2><span class="badge">{{ c.status|label }}</span></div>
+{% if c.synthetic_fixture %}<small>{{ t('synthetic_fixture') }}</small>{% endif %}
+<div class="campaign-facts"><div><small>{{ t('target_units') }}</small><strong>{{ c.target_units }}</strong></div><div><small>{{ t('projected_deficit') }}</small><strong>{{ c.projected_deficit|default('—') }}</strong></div><div><small>{{ t('invitations_sent') }}</small><strong>{{ c.invited }}</strong></div><div><small>{{ t('interest_only') }}</small><strong>{{ c.interested }}</strong></div></div>
+<table><tbody><tr><th>{{ t('required_by') }}</th><td>{{ c.need_by }}</td></tr><tr><th>{{ t('collection_window') }}</th><td>{{ c.campaign_window_start }} → {{ c.campaign_window_end }}</td></tr><tr><th>{{ t('expected_release') }}</th><td>{{ c.expected_available_at }}</td></tr></tbody></table>
+<p>{{ t('conditional_supply') }}</p><p><strong>{{ t('next_action') }}:</strong> {{ t('next.'+c.status) }}</p>
+{% if c.status=='PENDING_CENTER_APPROVAL' and user.role=='manager' and user.scope==c.scope %}
+<form method="post" action="{{ url_for('campaign_approve',identity=c.id) }}"><input type="hidden" name="csrf" value="{{ csrf }}">
+<label>{{ t('campaign_mode') }}<select name="mode"><option value="PARTNER_HOSTED">{{ 'PARTNER_HOSTED'|label }}</option><option value="CENTER_DIRECT">{{ 'CENTER_DIRECT'|label }}</option></select></label>
+<button class="primary" name="accept" value="true">{{ t('approve_campaign') }}</button><button name="accept" value="false">{{ t('decline') }}</button></form>{% endif %}
+{% if c.status=='CONFIRMED' and user.role=='manager' and user.scope==c.scope %}
+{% if demo %}<form method="post" action="{{ request.script_root }}/api/demo/campaign/{{ c.id }}/process"><input type="hidden" name="csrf" value="{{ csrf }}"><button>{{ t('simulate_processing') }}</button></form>{% endif %}
+<form method="post" action="{{ url_for('campaign_result',identity=c.id) }}"><input type="hidden" name="csrf" value="{{ csrf }}">
+<div class="grid"><label>{{ t('stage.attended') }}<input name="attended" type="number" min="0" required></label><label>{{ t('stage.collected') }}<input name="collected" type="number" min="0" required></label><label>{{ t('stage.released_usable') }}<input name="released_usable" type="number" min="0" required></label><label>{{ t('stage.used_before_expiry') }}<input name="used_before_expiry" type="number" min="0" value="0" required></label></div>
+<label>{{ t('declared_expiry') }}<input name="expires_at" required placeholder="2026-12-01T12:00:00Z"></label><button class="primary">{{ t('record_outcome') }}</button></form>{% endif %}
+<details><summary>{{ t('campaign_evidence') }}</summary>
+{% if c.similar_campaigns and c.similar_campaigns.results %}<p>{{ t('similarity_note') }}</p><table><tr><th>{{ t('campaign') }}</th><th>{{ t('similarity') }}</th><th>{{ t('stage.released_usable') }}</th></tr>{% for e in c.similar_campaigns.results %}<tr><td>{{ e.campaign_id }}</td><td>{{ '%.3f'|format(e.score) }}</td><td>{{ e.released_usable }}</td></tr>{% endfor %}</table>{% else %}<p>{{ t('no_vector_evidence') }}</p>{% endif %}
+<small>{{ t('correlation') }}: {{ c.correlation_id }}</small><pre>{{ c|tojson(indent=2) }}</pre></details>
+</article>{% else %}<p>{{ t('no_active_campaigns') }}</p>{% endfor %}</section>
+<section class="card" id="invitations"><h2>{{ t('campaign_invitations') }} · {{ ttl }}h</h2><p>{{ t('invitation_timing') }} {{ now }}</p>
+{% for i in pending %}<article class="item"><h3>{{ i.recipient_id }} <span class="badge">{{ i.status|label }}</span></h3><p>{{ t('expires_at') }} {{ i.expires_at }}</p>
+{% if user.role in ('partner','donor') and user.scope==i.recipient_id %}<form method="post" action="{{ url_for('invitation_reply',identity=i.id) }}"><input type="hidden" name="csrf" value="{{ csrf }}"><button class="primary" name="accept" value="true">{{ t('register_interest' if i.recipient_type=='DONOR' else 'accept_invitation') }}</button><button name="accept" value="false">{{ t('decline') }}</button></form>{% endif %}</article>{% else %}<p>{{ t('copy.044') }}</p>{% endfor %}
+{% if user.role=='admin' %}<form method="post" action="{{ url_for('settings') }}"><input type="hidden" name="csrf" value="{{ csrf }}"><label>{{ t('new_invitation_ttl') }}<input type="number" min="1" max="168" name="hours" value="{{ ttl }}" required></label><button>{{ t('save_settings') }}</button></form>{% endif %}</section>
+<section class="card" id="outcomes"><h2>{{ t('campaign_outcomes') }}</h2><p>{{ t('outcome_note') }}</p>
+{% for c in campaigns if c.status in ('COMPLETED','CANCELLED') %}<details id="{{ c.id }}" data-record-group="{{ c.blood_type|default('O-') }}" data-record-centers="{{ c.scope }}"><summary>{{ c.blood_type|default('O-') }} · {{ c.scope }} · {{ c.partner_id }} <span class="badge">{{ c.status|label }}</span></summary>
+<div class="campaign-facts">{% for key in ('collected','released_usable','used_before_expiry') %}<div><small>{{ t('stage.'+key) }}</small><strong>{{ c[key] }}</strong></div>{% endfor %}</div><p>{{ c.campaign_window_start }} → {{ c.expected_available_at }}</p><pre>{{ c|tojson(indent=2) }}</pre></details>{% else %}<p>{{ t('empty') }}</p>{% endfor %}</section>
+<section class="card" id="history"><h2>{{ t('invitation_history') }}</h2><table><tr><th>{{ t('copy.046') }}</th><th>{{ t('copy.047') }}</th><th>{{ t('copy.048') }}</th></tr>{% for i in invitations %}<tr><td>{{ i.recipient_id }}</td><td>{{ i.status|label }}</td><td>{{ i.expires_at }}</td></tr>{% endfor %}</table></section>
+{% endblock %}

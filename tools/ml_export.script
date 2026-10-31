@@ -1,0 +1,4 @@
+zn "USER"
+write $text(%PredictAll+5^%ML.AutoML.TrainedModel.1),!
+do $system.OBJ.Export("%ML.AutoML.TrainedModel.cls,%ML.AutoML.Provider.cls","/opt/hemoflow/docs/build154-ml.xml")
+halt

@@ -1,0 +1,11 @@
+.env
+.git
+data
+__pycache__
+.pytest_cache
+docs/build154-*.xml
+docs/runtime-probe.json
+java/pex/target
+UI/preview
+node_modules
+docs/screenshots

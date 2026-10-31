@@ -1,0 +1,6 @@
+{
+  "name": "hemoflow-ui-assets",
+  "private": true,
+  "scripts": {"vendor": "node tools/vendor-echarts.cjs"},
+  "dependencies": {"echarts": "5.6.0"}
+}

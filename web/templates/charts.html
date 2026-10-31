@@ -1,0 +1,11 @@
+{% if user.role in ('admin','manager','auditor') or page=='campaigns' %}
+<section class="analytics" data-page="{{ page }}" data-app-root="{{ request.script_root }}" data-default-center="{{ user.scope if page=='panel' and user.role=='manager' else 'HEMO-A' if page=='panel' else 'ALL' }}" data-analytics-url="{{ url_for('chart_data',page=page) }}" aria-label="{{ t('live_view') }}">
+<form class="chart-toolbar" aria-label="{{ t('filters') }}">
+<div><span class="eyebrow">{{ t('live_view') }}</span><p>{{ t('app.tagline') }}</p></div>
+<label>{{ t('center') }}<select name="center"><option value="ALL">{{ t('all_centers') }}</option>{% for c in centers %}<option value="{{ c.id }}">{{ c.name|display_name }}</option>{% endfor %}</select></label>
+<label>{{ t('blood_type') }}<select name="blood_type">{% if page in ('campaigns','audit') %}<option value="ALL">{{ t('all_blood_types') }}</option>{% endif %}{% for group in blood_types %}<option value="{{ group }}">{{ group }}</option>{% endfor %}</select></label>
+<label>{{ t('period') }}<select name="days">{% for d in (7,30,90,180) %}<option value="{{ d }}" {{ 'selected' if d==30 }}>{{ t('days_'+d|string) }}</option>{% endfor %}</select></label>
+<button type="submit" class="primary">{{ t('refresh') }}</button></form>
+<p class="chart-status" role="status" aria-live="polite">{{ t('loading') }}</p><div class="analytics-summary stats"></div><div class="charts-grid" aria-busy="true"></div><div class="analytics-actions"></div><div class="analytics-sources"></div>
+<p class="coverage">{{ t('note.coverage') }}</p><noscript><p class="notice">{{ t('javascript_required') }}</p></noscript></section>
+{% endif %}

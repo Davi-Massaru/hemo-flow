@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="IRIS" version="26">
+  <Document name="hemoflow.ZPM"><Module>
+    <Name>hemoflow</Name><Version>0.1.0</Version><Packaging>module</Packaging>
+    <Description>Federated synthetic blood coordination, IRIS AI Hub EAP 154.</Description>
+    <SourcesRoot>iris</SourcesRoot>
+    <Resource Name="HemoFlow.PKG"/>
+    <Invoke Class="HemoFlow.Bootstrap" Method="IPMActivate"/>
+  </Module></Document>
+</Export>

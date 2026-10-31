@@ -1,0 +1,4 @@
+zn "USER"
+do $system.OBJ.Load("/opt/hemoflow/tools/Probe.cls","ck")
+do ##class(HemoFlow.Probe).File("/opt/hemoflow/tools/test_demo_e2e.py")
+halt

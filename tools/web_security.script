@@ -1,0 +1,6 @@
+zn "%SYS"
+write ##class(Security.Users).Get("UnknownUser",.u),!
+write "Enabled=",$get(u("Enabled"))," Roles=",$get(u("Roles")),!
+write ##class(Security.Applications).Get("/csp/hemoflow",.p),!
+write "Resource=",$get(p("Resource"))," MatchRoles=",$get(p("MatchRoles")),!
+halt

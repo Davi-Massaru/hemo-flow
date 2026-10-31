@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "REQ-007",
+  "decision": "REQUEST_TRANSFER",
+  "reason": "Need projected within 7 days; origin confirms candidate with enough usable shelf-life",
+  "evidence_ids": [
+    "FCST-007",
+    "AVAIL-B-007",
+    "CAPACITY-A-007"
+  ],
+  "requires_approval": true,
+  "source_center_id": "HEMO-B",
+  "target_center_id": "HEMO-A",
+  "component": "RED_BLOOD_CELLS",
+  "blood_type": "O-",
+  "requested_units": 10,
+  "need_by": "2026-10-31T12:00:00Z",
+  "inventory_observed_at": "2026-10-28T18:00:00Z"
+}

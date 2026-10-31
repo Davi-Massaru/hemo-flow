@@ -1,0 +1,6 @@
+zn "USER"
+write ##class(Ens.Director).StopProduction(10,1),!
+do $system.OBJ.Load("/opt/hemoflow/iris/HemoFlow/AIHubDecisionOperation.cls","ck")
+do $system.OBJ.Load("/opt/hemoflow/iris/HemoFlow/Runtime.cls","ck")
+write ##class(Ens.Director).StartProduction("HemoFlow.Production"),!
+halt

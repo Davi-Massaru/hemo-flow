@@ -1,0 +1,1068 @@
+
+Node: 138e468a1e75, Instance: IRIS
+
+USER>
+
+USER>
+CLEAN_APPLICATION_CLASSES 0
+
+USER>
+
+Load started on 10/29/2026 12:37:37
+Loading file /tmp/hemoflow-ipm-installer.xml as xml
+Imported class: IPM.Installer
+Compiling class IPM.Installer
+Compiling routine IPM.Installer.1
+Extracting package
+Installing ZPM
+Processing /tmp/dirKgjLdL/wheels/attrs-25.1.0-py3-none-any.whl
+Installing collected packages: attrs
+Successfully installed attrs-25.1.0
+Processing /tmp/dirKgjLdL/wheels/certifi-2025.1.31-py3-none-any.whl
+Installing collected packages: certifi
+Successfully installed certifi-2025.1.31
+Processing /tmp/dirKgjLdL/wheels/charset_normalizer-2.1.1-py3-none-any.whl
+Installing collected packages: charset-normalizer
+Successfully installed charset-normalizer-2.1.1
+WARNING: Target directory /usr/irissys/mgr/python/bin already exists. Specify --upgrade to force replacement.
+Processing /tmp/dirKgjLdL/wheels/idna-3.15-py3-none-any.whl
+Installing collected packages: idna
+Successfully installed idna-3.15
+Processing /tmp/dirKgjLdL/wheels/jsonschema-4.23.0-py3-none-any.whl
+Installing collected packages: jsonschema
+Successfully installed jsonschema-4.23.0
+WARNING: Target directory /usr/irissys/mgr/python/bin already exists. Specify --upgrade to force replacement.
+Processing /tmp/dirKgjLdL/wheels/jsonschema_specifications-2024.10.1-py3-none-any.whl
+Installing collected packages: jsonschema-specifications
+Successfully installed jsonschema-specifications-2024.10.1
+Processing /tmp/dirKgjLdL/wheels/oras-0.1.30-py3-none-any.whl
+Installing collected packages: oras
+Successfully installed oras-0.1.30
+Processing /tmp/dirKgjLdL/wheels/referencing-0.36.2-py3-none-any.whl
+Installing collected packages: referencing
+Successfully installed referencing-0.36.2
+Processing /tmp/dirKgjLdL/wheels/requests-2.33.0-py3-none-any.whl
+Installing collected packages: requests
+Successfully installed requests-2.33.0
+Processing /tmp/dirKgjLdL/wheels/typing_extensions-4.12.2-py3-none-any.whl
+Installing collected packages: typing-extensions
+Successfully installed typing-extensions-4.12.2
+WARNING: Target directory /usr/irissys/mgr/python/__pycache__ already exists. Specify --upgrade to force replacement.
+WARNING: Target directory /usr/irissys/mgr/python/typing_extensions.py already exists. Specify --upgrade to force replacement.
+Processing /tmp/dirKgjLdL/wheels/urllib3-2.7.0-py3-none-any.whl
+Installing collected packages: urllib3
+Successfully installed urllib3-2.7.0
+
+Loading file /tmp/dirKgjLdL/src/cls/IPM/DataType/PhaseName.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/DataType/PhaseWhen.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/DataType/RegExString.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/DataType/RepoName.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/DataType/RepoMoniker.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/DataType/RepoLocation.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/DataType/ResourceDirectory.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/DataType/VersionString.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/DataType/ResourceName.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ExtensionBase/Constants.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ExtensionBase/CompositeMethodOverrides.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ExtensionBase/UniversalSettings.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ExtensionBase/ResourceMappingCache.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Main.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ExtensionBase/Utils.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ExtensionBase/Composite.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ExtensionBase/SourceControl/ResourceInfo.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ExtensionBase/ServerMenu/Interface.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ExtensionBase/SourceControl/Interface.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/Archive.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/AbstractHistory.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/History.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/HistoryTemp.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/EnvironmentConfig.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/HistoryPhase.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/AbstractSettings.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/IConfigurable.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/LockFile.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/LogManager.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/SASchema.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/ModuleInfo.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/Settings.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/SemanticVersion.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/SemanticVersionExpression.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/Singleton.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/TempLocalRepoManager.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/LockFile/Dependency.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/LogManager/Message.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/SemanticVersion/Find.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/SemanticVersion/Index.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/SemanticVersion/Properties.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/SemanticVersionExpression/Range.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/SemanticVersionExpression/IComparable.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/Update/VersionBase.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/General/SemanticVersionExpression/Comparator.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/JSON/Adaptor.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Lifecycle/DeployedModule.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/JSON/Generator.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Lifecycle/Module.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Lifecycle/StudioProject/XDataArchive/FileCharacter.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Lifecycle/StudioProject/XDataArchive.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Lifecycle/StudioProject/ContainerClass.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Lifecycle/StudioProject/XDataArchive/FileBinary.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Lifecycle/StudioProject.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Lifecycle/StudioProject/XDataArchive/IFile.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/IPackageService.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/IPublishService.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Lifecycle/Base.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/SearchCriteria.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/UniversalSettings.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/Manager.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/Definition.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/Utils.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/XSLTProvider.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/Filesystem/Cache.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/Oras/ArtifactMetadata.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/Filesystem/PackageService.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/Http/Definition.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/Http/PackageService.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/Oras/Definition.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/Filesystem/Definition.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/Oras/PublishService.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/Oras/PublishManager.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/Remote/Info.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/Oras/PackageService.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/Remote/ModuleInfo.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/Remote/Definition.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/Remote/PackageService.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/Remote/PublishService.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Repo/Remote/PublishManager.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/AbstractCompilable.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/Abstract.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/CPF.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/ArtifactoryTarball.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/Copy.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/CSPApplication.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/CustomPhaseMixin.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/LegacyLocalizedMessages.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/FileCopy.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/LocalizationExport.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/PropertyParameters.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/SystemSetting.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/ModuleExport.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/PythonWheel.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/Test.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/UnitTest.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/Default/Class.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/WebApplication.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/Default/DeepSeeItem.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/Default/Global.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/Default/Document.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/Default/Interoperability.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/Default/Include.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/Default/Package.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/Default/LocalizedMessages.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/Default/Routine.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/LocalizationExport/MsgDomain.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/ResourceProcessor/LocalizationExport/MsgFile.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/ModuleAuthorInfo.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/ModuleInfo.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/InvokeReference.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/ModuleReference.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/MappingReference.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/ModuleSetting.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/LoadedResource.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/QualifiedModuleInfo.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/ModuleTemplate.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/ModuleSetting/NamespaceConfig.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/Module.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/SystemRequirements.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/ModuleSetting/Parameter.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/ModuleSetting/Default.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/ResourceReference.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/ModuleSetting/ProcessorDefault/Condition.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/ModuleSetting/ProcessorDefault.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/UpdateStep/PrimaryOnly.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/UpdateStep/Base.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Storage/UpdateStep/AnyMember.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/StudioDocument/LocalizedMessages.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/StudioDocument/LocalizedMessageStream.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/StudioDocument/AbstractStream.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/StudioDocument/Projection.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/StudioDocument/Module.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/StudioDocument/ModuleStream.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Test/JsonOutput.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/StudioDocument/Abstract.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Test/Abstract.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Test/JUnitOutput.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Test/ToonOutput.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Test/Utils.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Utils/CodeGeneration.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Utils/Class.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Utils/Build.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Test/YamlOutput.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Test/Manager.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Utils/ComparisonAdaptor.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Utils/EmbeddedPython.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Utils/JournalManager.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Utils/LegacyCompat.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Utils/File.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Utils/InterruptManager.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Utils/FileBinaryTar.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Utils/LockManager.cls as udl
+Loading file /tmp/dirKgjLdL/src/inc/IPM/Formatting.inc as udl
+%IPM.Formatting.INC Loaded
+Loading file /tmp/dirKgjLdL/src/inc/IPM/Common.inc as udl
+%IPM.Common.INC Loaded
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Utils/Migration.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Utils/OutputSuppressor.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Utils/TempFileManager.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Utils/ComparisonAdaptor/PropertyParams.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Utils/XMLCommentHandler.cls as udl
+Loading file /tmp/dirKgjLdL/src/cls/IPM/Utils/Module.cls as udl
+
+Compilation started on 10/29/2026 12:37:38 with qualifiers 'ck'
+Compiling 171 classes
+Compiling class %IPM.DataType.Any
+Compiling class %IPM.JSON.Generator
+Compiling class %IPM.Utils.ComparisonAdaptor.PropertyParams
+Compiling routine %IPM.JSON.Generator.1
+Compiling class %IPM.ResourceProcessor.PropertyParameters
+Compiling class %IPM.Utils.CodeGeneration
+Compiling class %IPM.General.SemanticVersion.Index
+Compiling class %IPM.Utils.Module
+Compiling class %IPM.JSON.Adaptor
+Compiling routine %IPM.General.SemanticVersion.Index.1
+Compiling routine %IPM.JSON.Adaptor.1
+Compiling routine %IPM.Utils.CodeGeneration.1
+Compiling routine %IPM.Utils.Module.1
+Compiling class %IPM.Utils.ComparisonAdaptor
+Compiling routine %IPM.Utils.ComparisonAdaptor.1
+Compiling class %IPM.DataType.PhaseWhen
+Compiling class %IPM.DataType.LongString
+Compiling class %IPM.DataType.PhaseName
+Compiling class %IPM.DataType.GlobalReference
+Compiling class %IPM.DataType.CustomPhaseName
+Compiling class %IPM.DataType.ModuleName
+Compiling class %IPM.DataType.RegExString
+Compiling class %IPM.DataType.ResourceDirectory
+Compiling class %IPM.DataType.VersionString
+Compiling class %IPM.DependencyAnalyzer
+Compiling class %IPM.ExtensionBase.Constants
+Compiling class %IPM.ExtensionBase.SourceControl.Interface
+Compiling class %IPM.ExtensionBase.Utils
+Compiling class %IPM.DataType.ListOfOptions
+Compiling class %IPM.General.SASchema
+Compiling class %IPM.General.IConfigurable
+Compiling class %IPM.General.LogManager.Message
+Compiling class %IPM.ExtensionBase.SourceControl.ResourceInfo
+Compiling class %IPM.General.Update.VersionBase
+Compiling class %IPM.Lifecycle.StudioProject.ContainerClass
+Compiling class %IPM.ExtensionBase.ServerMenu.Interface
+Compiling class %IPM.ExtensionBase.CompositeMethodOverrides
+Compiling class %IPM.General.SemanticVersionExpression.IComparable
+Compiling class %IPM.General.Singleton
+Compiling class %IPM.General.TempLocalRepoManager
+Compiling class %IPM.Repo.IPublishService
+Compiling class %IPM.General.HistoryPhase
+Compiling class %IPM.Repo.IPackageService
+Compiling class %IPM.Lifecycle.StudioProject.XDataArchive
+Compiling class %IPM.Repo.Utils
+Compiling class %IPM.Repo.UniversalSettings
+Compiling class %IPM.Lifecycle.StudioProject.XDataArchive.IFile
+Compiling class %IPM.ResourceProcessor.LocalizationExport.MsgDomain
+Compiling class %IPM.Repo.SearchCriteria
+Compiling class %IPM.ResourceProcessor.Abstract
+Compiling class %IPM.ResourceProcessor.LocalizationExport.MsgFile
+Compiling class %IPM.Repo.Remote.Info
+Compiling class %IPM.StudioDocument.Projection
+Compiling class %IPM.Storage.UpdateStep.Base
+Compiling class %IPM.Test.Abstract
+Compiling class %IPM.Test.Utils
+Compiling class %IPM.StudioDocument.AbstractStream
+Compiling class %IPM.Utils.Class
+Compiling class %IPM.Utils.Build
+Compiling class %IPM.Utils.EmbeddedPython
+Compiling class %IPM.Utils.File
+Compiling class %IPM.CLI.Commands
+Compiling class %IPM.Utils.InterruptManager
+Compiling class %IPM.Utils.LegacyCompat
+Compiling class %IPM.Utils.JournalManager
+Compiling class %IPM.Utils.Migration
+Compiling class %IPM.Utils.LockManager
+Compiling class %IPM.Utils.OutputSuppressor
+Compiling class %IPM.Test.Manager
+Compiling class %IPM.Utils.XMLCommentHandler
+Compiling class %IPM.Storage.ModuleSetting
+Compiling class %IPM.Storage.ModuleSetting.ProcessorDefault.Condition
+Compiling class %IPM.Storage.ModuleAuthorInfo
+Compiling class %IPM.Storage.LoadedResource
+Compiling class %IPM.Utils.FileBinaryTar
+Compiling class %IPM.DataType.ResourceName
+Compiling class %IPM.DataType.CommandLineArgs
+Compiling class %IPM.CLI
+Compiling class %IPM.DataType.RepoName
+Compiling class %IPM.DataType.PythonWheelName
+Compiling class %IPM.DataType.OrasNamespace
+Compiling class %IPM.DataType.RepoLocation
+Compiling class %IPM.DataType.RepoMoniker
+Compiling class %IPM.General.Archive
+Compiling class %IPM.ExtensionBase.ResourceMappingCache
+Compiling class %IPM.General.LogManager
+Compiling class %IPM.Lifecycle.StudioProject.XDataArchive.FileCharacter
+Compiling class %IPM.General.EnvironmentConfig
+Compiling class %IPM.Repo.Filesystem.PackageService
+Compiling class %IPM.Lifecycle.StudioProject.XDataArchive.FileBinary
+Compiling class %IPM.General.SemanticVersion.Properties
+Compiling class %IPM.Repo.Oras.PublishManager
+Compiling class %IPM.Repo.XSLTProvider
+Compiling class %IPM.Repo.Manager
+Compiling class %IPM.ExtensionBase.Composite
+Compiling class %IPM.Repo.Remote.PublishManager
+Compiling class %IPM.General.AbstractSettings
+Compiling class %IPM.ResourceProcessor.CustomPhaseMixin
+Compiling class %IPM.ResourceProcessor.AbstractCompilable
+Compiling class %IPM.Repo.Oras.ArtifactMetadata
+Compiling class %IPM.ResourceProcessor.ArtifactoryTarball
+Compiling class %IPM.ResourceProcessor.ModuleExport
+Compiling class %IPM.ResourceProcessor.SystemSetting
+Compiling class %IPM.ResourceProcessor.FileCopy
+Compiling class %IPM.ResourceProcessor.LegacyLocalizedMessages
+Compiling class %IPM.ResourceProcessor.LocalizationExport
+Compiling class %IPM.ResourceProcessor.Default.Global
+Compiling class %IPM.ResourceProcessor.Test
+Compiling class %IPM.ResourceProcessor.WebApplication
+Compiling class %IPM.Storage.ModuleSetting.Default
+Compiling class %IPM.Storage.ModuleSetting.NamespaceConfig
+Compiling class %IPM.Test.JUnitOutput
+Compiling class %IPM.Storage.ModuleSetting.Parameter
+Compiling class %IPM.Test.JsonOutput
+Compiling class %IPM.Test.ToonOutput
+Compiling class %IPM.Storage.ModuleSetting.ProcessorDefault
+Compiling class %IPM.Test.YamlOutput
+Compiling class %IPM.Utils.TempFileManager
+Compiling class %IPM.Storage.UpdateStep.AnyMember
+Compiling class %IPM.StudioDocument.ModuleStream
+Compiling class %IPM.Storage.UpdateStep.PrimaryOnly
+Compiling class %IPM.StudioDocument.LocalizedMessageStream
+Compiling class %IPM.ResourceProcessor.CSPApplication
+Compiling class %IPM.General.LockFile.Dependency
+Compiling class %IPM.General.LockFile
+Compiling class %IPM.General.SemanticVersion
+Compiling class %IPM.Repo.Http.PackageService
+Compiling class %IPM.General.SemanticVersionExpression.Comparator
+Compiling class %IPM.ExtensionBase.UniversalSettings
+Compiling class %IPM.ResourceProcessor.Copy
+Compiling class %IPM.ResourceProcessor.PythonWheel
+Compiling class %IPM.ResourceProcessor.Default.Document
+Compiling class %IPM.General.Settings
+Compiling class %IPM.ResourceProcessor.CPF
+Compiling class %IPM.ResourceProcessor.UnitTest
+Compiling class %IPM.Main
+Compiling class %IPM.Repo.Definition
+Compiling class %IPM.General.SemanticVersionExpression.Range
+Compiling class %IPM.Repo.Remote.PackageService
+Compiling class %IPM.Repo.Oras.PackageService
+Compiling class %IPM.General.ModuleInfo
+Compiling class %IPM.ResourceProcessor.Default.Class
+Compiling class %IPM.General.AbstractHistory
+Compiling class %IPM.ResourceProcessor.Default.DeepSeeItem
+Compiling class %IPM.ResourceProcessor.Default.Interoperability
+Compiling class %IPM.ResourceProcessor.Default.Package
+Compiling class %IPM.ResourceProcessor.Default.Routine
+Compiling class %IPM.ResourceProcessor.Default.LocalizedMessages
+Compiling class %IPM.Repo.Http.Definition
+Compiling class %IPM.Repo.Filesystem.Definition
+Compiling class %IPM.General.SemanticVersionExpression
+Compiling class %IPM.Repo.Oras.PublishService
+Compiling class %IPM.Repo.Remote.PublishService
+Compiling class %IPM.ResourceProcessor.Default.Include
+Compiling class %IPM.Repo.Remote.ModuleInfo
+Compiling class %IPM.Storage.ModuleInfo
+Compiling class %IPM.General.HistoryTemp
+Compiling class %IPM.General.History
+Compiling class %IPM.Repo.Remote.Definition
+Compiling class %IPM.Repo.Filesystem.Cache
+Compiling class %IPM.Repo.Oras.Definition
+Compiling class %IPM.General.SemanticVersion.Find
+Compiling class %IPM.Storage.ModuleReference
+Compiling class %IPM.Storage.QualifiedModuleInfo
+Compiling class %IPM.Storage.SystemRequirements
+Compiling class %IPM.Storage.Module
+Compiling class %IPM.Storage.InvokeReference
+Compiling class %IPM.Storage.MappingReference
+Compiling class %IPM.Storage.ResourceReference
+Compiling class %IPM.Storage.ModuleTemplate
+Compiling table %IPM_General.Settings
+Compiling table %IPM_ExtensionBase.UniversalSettings
+Compiling table %IPM_Repo.Definition
+Compiling table %IPM_Repo_Filesystem.Definition
+Compiling table %IPM_General.HistoryTemp
+Compiling table %IPM_Repo_Http.Definition
+Compiling table %IPM_General.History
+Compiling table %IPM_Repo_Filesystem.Cache
+Compiling table %IPM_Storage.InvokeReference
+Compiling table %IPM_Storage.LoadedResource
+Compiling table %IPM_Repo_Oras.Definition
+Compiling table %IPM_Storage.ModuleItem_Defaults
+Compiling table %IPM_Repo_Remote.Definition
+Compiling table %IPM_Storage.MappingReference
+Compiling table %IPM_Storage.ModuleItem_Dependencies
+Compiling table %IPM_Storage.ModuleTemplate_Defaults
+Compiling table %IPM_Storage.ResourceReference_Attributes
+Compiling table %IPM_Storage.ModuleTemplate_Dependencies
+Compiling table %IPM_Storage.ResourceReference
+Compiling table %IPM_Storage.SystemRequirements
+Compiling table %IPM_Storage.ResourceReference_Children
+Compiling table %IPM_Storage_UpdateStep.AnyMember
+Compiling table %IPM_Storage.ModuleItem
+Compiling table %IPM_StudioDocument.LocalizedMessageStream
+Compiling table %IPM_Storage_UpdateStep.PrimaryOnly
+Compiling table %IPM_StudioDocument.ModuleStream
+Compiling table %IPM_Storage.ModuleTemplate
+Compiling routine %IPM.CLI.Commands.1
+Compiling routine %IPM.DataType.GlobalReference.1
+Compiling routine %IPM.DataType.LongString.1
+Compiling routine %IPM.DataType.CustomPhaseName.1
+Compiling routine %IPM.DataType.PhaseName.1
+Compiling routine %IPM.DataType.ListOfOptions.1
+Compiling routine %IPM.DataType.VersionString.1
+Compiling routine %IPM.DataType.PhaseWhen.1
+Compiling routine %IPM.DataType.ModuleName.1
+Compiling routine %IPM.DataType.ResourceDirectory.1
+Compiling routine %IPM.DataType.RegExString.1
+Compiling routine %IPM.ExtensionBase.Utils.1
+Compiling routine %IPM.ExtensionBase.SourceControl.ResourceInfo.1
+Compiling routine %IPM.ExtensionBase.SourceControl.Interface.1
+Compiling routine %IPM.DependencyAnalyzer.1
+Compiling routine %IPM.General.IConfigurable.1
+Compiling routine %IPM.General.HistoryPhase.1
+Compiling routine %IPM.General.LogManager.Message.1
+Compiling routine %IPM.General.Update.VersionBase.1
+Compiling routine %IPM.General.SemanticVersionExpression.IComparable.1
+Compiling routine %IPM.Lifecycle.StudioProject.ContainerClass.1
+Compiling routine %IPM.General.Singleton.1
+Compiling routine %IPM.Repo.IPackageService.1
+Compiling routine %IPM.Repo.IPublishService.1
+Compiling routine %IPM.ExtensionBase.CompositeMethodOverrides.1
+Compiling routine %IPM.Lifecycle.StudioProject.XDataArchive.IFile.1
+Compiling routine %IPM.General.TempLocalRepoManager.1
+Compiling routine %IPM.General.SASchema.1
+Compiling routine %IPM.Repo.Remote.Info.1
+Compiling routine %IPM.Lifecycle.StudioProject.XDataArchive.1
+Compiling routine %IPM.ExtensionBase.ServerMenu.Interface.1
+Compiling routine %IPM.Repo.UniversalSettings.1
+Compiling routine %IPM.Repo.Utils.1
+Compiling routine %IPM.ResourceProcessor.Abstract.1
+Compiling routine %IPM.Storage.ModuleSetting.1
+Compiling routine %IPM.Storage.ModuleAuthorInfo.1
+Compiling routine %IPM.ResourceProcessor.LocalizationExport.MsgFile.1
+Compiling routine %IPM.ResourceProcessor.LocalizationExport.MsgDomain.1
+Compiling routine %IPM.Repo.SearchCriteria.1
+Compiling routine %IPM.StudioDocument.Projection.1
+Compiling routine %IPM.Storage.ModuleSetting.ProcessorDefault.Condition.1
+Compiling routine %IPM.Storage.UpdateStep.Base.1
+Compiling routine %IPM.Test.Abstract.1
+Compiling routine %IPM.Utils.Class.1
+Compiling routine %IPM.Test.Manager.1
+Compiling routine %IPM.Utils.InterruptManager.1
+Compiling routine %IPM.StudioDocument.AbstractStream.1
+Compiling routine %IPM.Utils.File.1
+Compiling routine %IPM.Utils.LegacyCompat.1
+Compiling routine %IPM.Utils.JournalManager.1
+Compiling routine %IPM.Test.Utils.1
+Compiling routine %IPM.Utils.OutputSuppressor.1
+Compiling routine %IPM.Utils.LockManager.1
+Compiling routine %IPM.Utils.Migration.1
+Compiling routine %IPM.Utils.XMLCommentHandler.1
+Compiling routine %IPM.Utils.Build.1
+Compiling routine %IPM.Utils.FileBinaryTar.1
+Compiling routine %IPM.Storage.LoadedResource.1
+Compiling routine %IPM.Utils.EmbeddedPython.1
+Compiling routine %IPM.ExtensionBase.ResourceMappingCache.1
+Compiling routine %IPM.General.Archive.1
+Compiling routine %IPM.General.LogManager.1
+Compiling routine %IPM.General.EnvironmentConfig.1
+Compiling routine %IPM.Repo.Filesystem.PackageService.1
+Compiling routine %IPM.CLI.1
+Compiling routine %IPM.General.AbstractSettings.1
+Compiling routine %IPM.Lifecycle.StudioProject.XDataArchive.FileBinary.1
+Compiling routine %IPM.General.SemanticVersion.Properties.1
+Compiling routine %IPM.Repo.Oras.PublishManager.1
+Compiling routine %IPM.Repo.Oras.ArtifactMetadata.1
+Compiling routine %IPM.Lifecycle.StudioProject.XDataArchive.FileCharacter.1
+Compiling routine %IPM.Repo.Manager.1
+Compiling routine %IPM.Repo.XSLTProvider.1
+Compiling routine %IPM.ResourceProcessor.CustomPhaseMixin.1
+Compiling routine %IPM.ResourceProcessor.AbstractCompilable.1
+Compiling routine %IPM.Repo.Remote.PublishManager.1
+Compiling routine %IPM.ResourceProcessor.ArtifactoryTarball.1
+Compiling routine %IPM.ResourceProcessor.ModuleExport.1
+Compiling routine %IPM.ResourceProcessor.LocalizationExport.1
+Compiling routine %IPM.ResourceProcessor.LegacyLocalizedMessages.1
+Compiling routine %IPM.ResourceProcessor.Default.Global.1
+Compiling routine %IPM.ResourceProcessor.FileCopy.1
+Compiling routine %IPM.ExtensionBase.Composite.1
+Compiling routine %IPM.ResourceProcessor.SystemSetting.1
+Compiling routine %IPM.ResourceProcessor.Test.1
+Compiling routine %IPM.Storage.ModuleSetting.Default.1
+Compiling routine %IPM.Storage.ModuleSetting.NamespaceConfig.1
+Compiling routine %IPM.Storage.ModuleSetting.Parameter.1
+Compiling routine %IPM.Test.JUnitOutput.1
+Compiling routine %IPM.Test.JsonOutput.1
+Compiling routine %IPM.ResourceProcessor.WebApplication.1
+Compiling routine %IPM.Test.ToonOutput.1
+Compiling routine %IPM.Test.YamlOutput.1
+Compiling routine %IPM.Storage.ModuleSetting.ProcessorDefault.1
+Compiling routine %IPM.Utils.TempFileManager.1
+Compiling routine %IPM.Storage.UpdateStep.AnyMember.1
+Compiling routine %IPM.StudioDocument.ModuleStream.1
+Compiling routine %IPM.StudioDocument.LocalizedMessageStream.1
+Compiling routine %IPM.Storage.UpdateStep.PrimaryOnly.1
+Compiling routine %IPM.ResourceProcessor.CSPApplication.1
+Compiling routine %IPM.General.LockFile.Dependency.1
+Compiling routine %IPM.General.LockFile.1
+Compiling routine %IPM.Repo.Http.PackageService.1
+Compiling routine %IPM.General.SemanticVersionExpression.Comparator.1
+Compiling routine %IPM.General.SemanticVersion.1
+Compiling routine %IPM.ResourceProcessor.Copy.1
+Compiling routine %IPM.ResourceProcessor.CPF.1
+Compiling routine %IPM.ResourceProcessor.PythonWheel.1
+Compiling routine %IPM.ResourceProcessor.Default.Document.1
+Compiling routine %IPM.General.Settings.1
+Compiling routine %IPM.ExtensionBase.UniversalSettings.1
+Compiling routine %IPM.Repo.Definition.1
+Compiling routine %IPM.Main.1
+Compiling routine %IPM.ResourceProcessor.Default.Class.1
+Compiling routine %IPM.Repo.Remote.PackageService.1
+Compiling routine %IPM.General.ModuleInfo.1
+Compiling routine %IPM.ResourceProcessor.Default.Interoperability.1
+Compiling routine %IPM.Repo.Oras.PackageService.1
+Compiling routine %IPM.ResourceProcessor.Default.LocalizedMessages.1
+Compiling routine %IPM.ResourceProcessor.Default.DeepSeeItem.1
+Compiling routine %IPM.General.SemanticVersionExpression.Range.1
+Compiling routine %IPM.ResourceProcessor.Default.Package.1
+Compiling routine %IPM.ResourceProcessor.Default.Routine.1
+Compiling routine %IPM.General.AbstractHistory.1
+Compiling routine %IPM.Repo.Http.Definition.1
+Compiling routine %IPM.Repo.Filesystem.Definition.1
+Compiling routine %IPM.General.SemanticVersionExpression.1
+Compiling routine %IPM.Repo.Remote.PublishService.1
+Compiling routine %IPM.ResourceProcessor.Default.Include.1
+Compiling routine %IPM.Repo.Remote.ModuleInfo.1
+Compiling routine %IPM.General.HistoryTemp.1
+Compiling routine %IPM.Storage.ModuleInfo.1
+Compiling routine %IPM.General.History.1
+Compiling routine %IPM.Repo.Oras.PublishService.1
+Compiling routine %IPM.Repo.Remote.Definition.1
+Compiling routine %IPM.Repo.Oras.Definition.1
+Compiling routine %IPM.Repo.Filesystem.Cache.1
+Compiling routine %IPM.General.SemanticVersion.Find.1
+Compiling routine %IPM.Storage.ModuleReference.1
+Compiling routine %IPM.Storage.QualifiedModuleInfo.1
+Compiling routine %IPM.Storage.SystemRequirements.1
+Compiling routine %IPM.Storage.ModuleDependencies.1
+Compiling routine %IPM.Storage.ModuleDefaults.1
+Compiling routine %IPM.Storage.Module.1
+Compiling routine %IPM.Storage.ResourceReferenceAttributes.1
+Compiling routine %IPM.Storage.ModuleTemplateDefaults.1
+Compiling routine %IPM.Storage.ResourceReferenceChildren.1
+Compiling routine %IPM.Storage.ModuleTemplateDependencies.1
+Compiling routine %IPM.Storage.InvokeReference.1
+Compiling routine %IPM.Storage.MappingReference.1
+Compiling routine %IPM.Storage.ResourceReference.1
+Compiling routine %IPM.Storage.ModuleTemplate.1
+Compiling class %IPM.Lifecycle.Base
+Compiling class %IPM.StudioDocument.Abstract
+Compiling class %IPM.Lifecycle.StudioProject
+Compiling class %IPM.Lifecycle.Module
+Compiling class %IPM.StudioDocument.Module
+Compiling class %IPM.StudioDocument.LocalizedMessages
+Compiling class %IPM.Lifecycle.DeployedModule
+Compiling routine %IPM.StudioDocument.Abstract.1
+Compiling routine %IPM.Lifecycle.Base.1
+Compiling routine %IPM.StudioDocument.LocalizedMessages.1
+Compiling routine %IPM.Lifecycle.Module.1
+Compiling routine %IPM.Lifecycle.StudioProject.1
+Compiling routine %IPM.StudioDocument.Module.1
+Compiling routine %IPM.Lifecycle.DeployedModule.1
+Compilation finished successfully in 1.886s.
+
+Load finished successfully.
+
+Compiling routine : %ZLANGC00.mac
+Compiling routine : %ZLANGF00.mac2026-10-29 12:37:40 3 Evaluate: ${REGISTRY} -> https://pm.community.intersystems.com
+2026-10-29 12:37:40 3 Evaluate: ${TRACKINGID} -> UA-126752118-1
+2026-10-29 12:37:40 3 Evaluate: ${MODDIR} -> /tmp/dirKgjLdL/
+
+Building dependency graph...Done.
+[USER|ZPM]	Initialize START
+Compilation started on 10/29/2026 12:37:46
+Compiling class IPM.Installer
+Compiling routine IPM.Installer.1
+Compilation finished successfully in 0.047s.
+
+[USER|ZPM]	Initialize SUCCESS
+[USER|ZPM]	Reload START (/tmp/dirKgjLdL/)
+[USER|ZPM]	Reload SUCCESS
+[ZPM]	Module object refreshed.
+[USER|ZPM]	Validate START
+[USER|ZPM]	Validate SUCCESS
+[USER|ZPM]	Compile START
+[USER|ZPM]	Compile SUCCESS
+[USER|ZPM]	Activate START
+[USER|ZPM]	Configure START
+Compiling routine : %ZLANGC00.mac
+Compiling routine : %ZLANGF00.mac
+[USER|ZPM]	Configure SUCCESS
+Installed ipm and iriscli scripts to /home/irisowner/.local/bin/
+[USER|ZPM]	Activate SUCCESS2026-10-29 12:37:53 0 IPM.Installer: Installation succeeded at 2026-10-29 12:37:53
+2026-10-29 12:37:53 0 %Installer: Elapsed time 15.816782s
+Time spent 15.823162
+Load finished successfully.
+
+USER>
+
+Load started on 10/29/2026 12:37:53
+Loading file /opt/hemoflow/module.xml as xml
+Imported document: hemoflow.ZPM
+Load finished successfully.
+
+Building dependency graph...Done.
+Created inverted dependency graph from dependency graph
+Constructed flat dependency list from inverted dependency graph
+Starting installation of dependencies...
+
+Load started on 10/29/2026 12:37:53
+Loading file /opt/hemoflow/module.xml as xml
+Imported document: hemoflow.ZPM
+Load finished successfully.
+
+Loading hemoflow in process 719
+[USER|hemoflow]	Initialize START
+Skipping preload - directory does not exist.
+[USER|hemoflow]	Initialize SUCCESS
+[USER|hemoflow]	Reload START (/opt/hemoflow/)
+[USER|hemoflow]	requirements.txt START
+
+Detecting pip caller
+Attempting to find flexible python... 
+Attempting to find python3 or python...Success!
+Running command=$lb("python3","-m","pip","install","-r","requirements.txt","-t","/usr/irissys/mgr/python/","--python-version","3.12.3","--only-binary=:all:")
+Collecting Flask==3.1.2 (from -r requirements.txt (line 1))
+  Downloading flask-3.1.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting jsonschema==4.25.1 (from -r requirements.txt (line 2))
+  Downloading jsonschema-4.25.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting fhir.resources==6.1.0 (from -r requirements.txt (line 3))
+  Downloading fhir.resources-6.1.0-py2.py3-none-any.whl.metadata (31 kB)
+Collecting pydantic==1.10.26 (from -r requirements.txt (line 4))
+  Downloading pydantic-1.10.26-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (155 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.1/155.1 kB 5.8 MB/s eta 0:00:00
+Collecting fastembed==0.7.4 (from -r requirements.txt (line 5))
+  Downloading fastembed-0.7.4-py3-none-any.whl.metadata (10 kB)
+Collecting pytest==8.4.2 (from -r requirements.txt (line 6))
+  Downloading pytest-8.4.2-py3-none-any.whl.metadata (7.7 kB)
+Collecting blinker>=1.9.0 (from Flask==3.1.2->-r requirements.txt (line 1))
+  Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting click>=8.1.3 (from Flask==3.1.2->-r requirements.txt (line 1))
+  Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting itsdangerous>=2.2.0 (from Flask==3.1.2->-r requirements.txt (line 1))
+  Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting jinja2>=3.1.2 (from Flask==3.1.2->-r requirements.txt (line 1))
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting markupsafe>=2.1.1 (from Flask==3.1.2->-r requirements.txt (line 1))
+  Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Collecting werkzeug>=3.1.0 (from Flask==3.1.2->-r requirements.txt (line 1))
+  Downloading werkzeug-3.1.9-py3-none-any.whl.metadata (4.1 kB)
+Collecting attrs>=22.2.0 (from jsonschema==4.25.1->-r requirements.txt (line 2))
+  Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema==4.25.1->-r requirements.txt (line 2))
+  Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema==4.25.1->-r requirements.txt (line 2))
+  Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.7.1 (from jsonschema==4.25.1->-r requirements.txt (line 2))
+  Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+Collecting typing-extensions>=4.2.0 (from pydantic==1.10.26->-r requirements.txt (line 4))
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting huggingface-hub<2.0,>=0.20 (from fastembed==0.7.4->-r requirements.txt (line 5))
+  Downloading huggingface_hub-1.33.0-py3-none-any.whl.metadata (16 kB)
+Collecting loguru<0.8.0,>=0.7.2 (from fastembed==0.7.4->-r requirements.txt (line 5))
+  Downloading loguru-0.7.3-py3-none-any.whl.metadata (22 kB)
+Collecting mmh3<6.0.0,>=4.1.0 (from fastembed==0.7.4->-r requirements.txt (line 5))
+  Downloading mmh3-5.3.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (13 kB)
+Collecting numpy>=1.26 (from fastembed==0.7.4->-r requirements.txt (line 5))
+  Downloading numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting onnxruntime!=1.20.0,>=1.17.0 (from fastembed==0.7.4->-r requirements.txt (line 5))
+  Downloading onnxruntime-1.31.1-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (5.8 kB)
+Collecting pillow<12.0,>=10.3.0 (from fastembed==0.7.4->-r requirements.txt (line 5))
+  Downloading pillow-11.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.0 kB)
+Collecting py-rust-stemmers<0.2.0,>=0.1.0 (from fastembed==0.7.4->-r requirements.txt (line 5))
+  Downloading py_rust_stemmers-0.1.8-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (3.5 kB)
+Collecting requests<3.0,>=2.31 (from fastembed==0.7.4->-r requirements.txt (line 5))
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting tokenizers<1.0,>=0.15 (from fastembed==0.7.4->-r requirements.txt (line 5))
+  Downloading tokenizers-0.23.3-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.8 kB)
+Collecting tqdm<5.0,>=4.66 (from fastembed==0.7.4->-r requirements.txt (line 5))
+  Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.4/57.4 kB 5.9 MB/s eta 0:00:00
+Collecting iniconfig>=1 (from pytest==8.4.2->-r requirements.txt (line 6))
+  Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting packaging>=20 (from pytest==8.4.2->-r requirements.txt (line 6))
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pluggy<2,>=1.5 (from pytest==8.4.2->-r requirements.txt (line 6))
+  Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest==8.4.2->-r requirements.txt (line 6))
+  Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting filelock>=3.10.0 (from huggingface-hub<2.0,>=0.20->fastembed==0.7.4->-r requirements.txt (line 5))
+  Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+Collecting fsspec>=2023.5.0 (from huggingface-hub<2.0,>=0.20->fastembed==0.7.4->-r requirements.txt (line 5))
+  Downloading fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting hf-xet<2.0.0,>=1.6.0 (from huggingface-hub<2.0,>=0.20->fastembed==0.7.4->-r requirements.txt (line 5))
+  Downloading hf_xet-1.7.1-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+Collecting httpx<1,>=0.23.0 (from huggingface-hub<2.0,>=0.20->fastembed==0.7.4->-r requirements.txt (line 5))
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting pyyaml>=5.1 (from huggingface-hub<2.0,>=0.20->fastembed==0.7.4->-r requirements.txt (line 5))
+  Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting flatbuffers (from onnxruntime!=1.20.0,>=1.17.0->fastembed==0.7.4->-r requirements.txt (line 5))
+  Downloading flatbuffers-25.12.19-py2.py3-none-any.whl.metadata (1.0 kB)
+Collecting protobuf>=4.25.8 (from onnxruntime!=1.20.0,>=1.17.0->fastembed==0.7.4->-r requirements.txt (line 5))
+  Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl.metadata (595 bytes)
+Collecting email-validator>=1.0.3 (from pydantic[email]>=1.7.2->fhir.resources==6.1.0->-r requirements.txt (line 3))
+  Downloading email_validator-2.3.0-py3-none-any.whl.metadata (26 kB)
+Collecting charset_normalizer<4,>=2 (from requests<3.0,>=2.31->fastembed==0.7.4->-r requirements.txt (line 5))
+  Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.4/46.4 kB 4.5 MB/s eta 0:00:00
+Collecting idna<4,>=2.5 (from requests<3.0,>=2.31->fastembed==0.7.4->-r requirements.txt (line 5))
+  Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting urllib3<3,>=1.26 (from requests<3.0,>=2.31->fastembed==0.7.4->-r requirements.txt (line 5))
+  Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting certifi>=2023.5.7 (from requests<3.0,>=2.31->fastembed==0.7.4->-r requirements.txt (line 5))
+  Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+Collecting dnspython>=2.0.0 (from email-validator>=1.0.3->pydantic[email]>=1.7.2->fhir.resources==6.1.0->-r requirements.txt (line 3))
+  Downloading dnspython-2.9.0-py3-none-any.whl.metadata (5.7 kB)
+Collecting anyio (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.20->fastembed==0.7.4->-r requirements.txt (line 5))
+  Using cached anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting httpcore==1.* (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.20->fastembed==0.7.4->-r requirements.txt (line 5))
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting h11>=0.16 (from httpcore==1.*->httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.20->fastembed==0.7.4->-r requirements.txt (line 5))
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Downloading flask-3.1.2-py3-none-any.whl (103 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.3/103.3 kB 9.9 MB/s eta 0:00:00
+Downloading jsonschema-4.25.1-py3-none-any.whl (90 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.0/90.0 kB 9.8 MB/s eta 0:00:00
+Downloading fhir.resources-6.1.0-py2.py3-none-any.whl (2.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 26.0 MB/s eta 0:00:00
+Downloading pydantic-1.10.26-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.6/2.6 MB 27.4 MB/s eta 0:00:00
+Downloading fastembed-0.7.4-py3-none-any.whl (108 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 108.5/108.5 kB 11.3 MB/s eta 0:00:00
+Downloading pytest-8.4.2-py3-none-any.whl (365 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 365.8/365.8 kB 26.4 MB/s eta 0:00:00
+Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.5/67.5 kB 7.3 MB/s eta 0:00:00
+Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Downloading click-8.5.0-py3-none-any.whl (125 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.3/125.3 kB 9.9 MB/s eta 0:00:00
+Downloading huggingface_hub-1.33.0-py3-none-any.whl (846 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 846.4/846.4 kB 29.0 MB/s eta 0:00:00
+Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 11.9 MB/s eta 0:00:00
+Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Downloading loguru-0.7.3-py3-none-any.whl (61 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.6/61.6 kB 6.3 MB/s eta 0:00:00
+Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Downloading mmh3-5.3.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (103 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.1/103.1 kB 8.7 MB/s eta 0:00:00
+Downloading numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.7/16.7 MB 41.8 MB/s eta 0:00:00
+Downloading onnxruntime-1.31.1-cp312-cp312-manylinux_2_28_x86_64.whl (23.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.8/23.8 MB 30.6 MB/s eta 0:00:00
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pillow-11.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.6/6.6 MB 27.5 MB/s eta 0:00:00
+Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+Downloading py_rust_stemmers-0.1.8-cp312-cp312-manylinux_2_28_x86_64.whl (323 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 323.9/323.9 kB 19.9 MB/s eta 0:00:00
+Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 27.1 MB/s eta 0:00:00
+Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (371 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 371.3/371.3 kB 16.2 MB/s eta 0:00:00
+Downloading tokenizers-0.23.3-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 31.5 MB/s eta 0:00:00
+Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.2/80.2 kB 6.4 MB/s eta 0:00:00
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading werkzeug-3.1.9-py3-none-any.whl (228 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 228.7/228.7 kB 12.3 MB/s eta 0:00:00
+Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.1/135.1 kB 9.1 MB/s eta 0:00:00
+Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 257.6/257.6 kB 15.6 MB/s eta 0:00:00
+Downloading email_validator-2.3.0-py3-none-any.whl (35 kB)
+Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 162.5/162.5 kB 11.6 MB/s eta 0:00:00
+Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 221.7/221.7 kB 16.6 MB/s eta 0:00:00
+Downloading hf_xet-1.7.1-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 28.5 MB/s eta 0:00:00
+Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Using cached idna-3.20-py3-none-any.whl (69 kB)
+Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl (343 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 343.2/343.2 kB 24.5 MB/s eta 0:00:00
+Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Downloading flatbuffers-25.12.19-py2.py3-none-any.whl (26 kB)
+Downloading dnspython-2.9.0-py3-none-any.whl (354 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 354.8/354.8 kB 19.2 MB/s eta 0:00:00
+Using cached anyio-4.15.1-py3-none-any.whl (132 kB)
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Installing collected packages: flatbuffers, urllib3, typing-extensions, tqdm, rpds-py, pyyaml, pygments, py-rust-stemmers, protobuf, pluggy, pillow, packaging, numpy, mmh3, markupsafe, loguru, itsdangerous, iniconfig, idna, hf-xet, h11, fsspec, filelock, dnspython, click, charset_normalizer, certifi, blinker, attrs, werkzeug, requests, referencing, pytest, pydantic, onnxruntime, jinja2, httpcore, email-validator, anyio, jsonschema-specifications, httpx, Flask, jsonschema, huggingface-hub, fhir.resources, tokenizers, fastembed
+Successfully installed Flask-3.1.2 anyio-4.15.1 attrs-26.1.0 blinker-1.9.0 certifi-2026.10.23 charset_normalizer-3.5.2 click-8.5.0 dnspython-2.9.0 email-validator-2.3.0 fastembed-0.7.4 fhir.resources-6.1.0 filelock-4.2.4 flatbuffers-25.12.19 fsspec-2026.9.0 h11-0.16.0 hf-xet-1.7.1 httpcore-1.0.9 httpx-0.28.1 huggingface-hub-1.33.0 idna-3.20 iniconfig-2.3.1 itsdangerous-2.2.0 jinja2-3.1.6 jsonschema-4.25.1 jsonschema-specifications-2025.9.1 loguru-0.7.3 markupsafe-3.0.4 mmh3-5.3.1 numpy-2.5.4 onnxruntime-1.31.1 packaging-26.3 pillow-11.3.0 pluggy-1.7.0 protobuf-7.36.2 py-rust-stemmers-0.1.8 pydantic-1.10.26 pygments-2.21.0 pytest-8.4.2 pyyaml-6.0.3 referencing-0.37.0 requests-2.34.2 rpds-py-2026.9.1 tokenizers-0.23.3 tqdm-4.70.1 typing-extensions-4.16.0 urllib3-2.8.0 werkzeug-3.1.9
+
+[USER|hemoflow]	requirements.txt SUCCESS
+Load of directory started on 10/29/2026 12:38:11 '*'
+
+Loading file /opt/hemoflow/iris/HemoFlow/AIHubDecisionOperation.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/AIReadOperation.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/ApprovalBPL.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/Authentication.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/Bootstrap.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/Campaign.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/CampaignBPL.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/CampaignExperience.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/Command.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/ConsumptionDaily.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/DecisionAgent.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/DecisionAudit.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/DecisionBPL.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/DecisionContext.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/DecisionTools.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/DemandFeature.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/DemoRun.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/DomainOperation.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/DonorContact.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/EventAudit.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/Expirable.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/ExpirationService.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/ExpirationTask.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/FederatedInventoryOperation.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/FHIRTransferOperation.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/InventoryEventService.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/InvitationLedger.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/Message.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/NetworkCenter.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/Outbox.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/Partner.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/PendingInvitation.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/Production.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/Record.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/Response.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/Runtime.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/SystemConfig.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/Transfer.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/TransferBPL.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/User.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/Workflow.cls as udl
+Loading file /opt/hemoflow/iris/HemoFlow/WorkflowLink.cls as udl
+Load finished successfully.
+
+[USER|hemoflow]	Reload SUCCESS
+[hemoflow]	Module object refreshed.
+[USER|hemoflow]	Validate START
+[USER|hemoflow]	Validate SUCCESS
+[USER|hemoflow]	Compile START
+Compilation started on 10/29/2026 12:38:12 with qualifiers 'd-lck'
+Compiling 42 classes
+Compiling class HemoFlow.AIHubDecisionOperation
+Compiling class HemoFlow.AIReadOperation
+Compiling class HemoFlow.ApprovalBPL
+Compiling class HemoFlow.Authentication
+Compiling class HemoFlow.Bootstrap
+Compiling class HemoFlow.CampaignBPL
+Compiling class HemoFlow.CampaignExperience
+Compiling class HemoFlow.ConsumptionDaily
+Compiling class HemoFlow.DecisionAgent
+Compiling class HemoFlow.DecisionBPL
+Compiling class HemoFlow.DecisionTools
+Compiling class HemoFlow.DemandFeature
+Compiling class HemoFlow.DomainOperation
+Compiling class HemoFlow.ExpirationService
+Compiling class HemoFlow.ExpirationTask
+Compiling class HemoFlow.FHIRTransferOperation
+Compiling class HemoFlow.FederatedInventoryOperation
+Compiling class HemoFlow.InventoryEventService
+Compiling class HemoFlow.Message
+Compiling class HemoFlow.Production
+Compiling class HemoFlow.Record
+Compiling class HemoFlow.Response
+Compiling class HemoFlow.Runtime
+Compiling class HemoFlow.TransferBPL
+Compiling class HemoFlow.Workflow
+Compiling class HemoFlow.Campaign
+Compiling class HemoFlow.Command
+Compiling class HemoFlow.DecisionAudit
+Compiling class HemoFlow.DemoRun
+Compiling class HemoFlow.DonorContact
+Compiling class HemoFlow.EventAudit
+Compiling class HemoFlow.Expirable
+Compiling class HemoFlow.InvitationLedger
+Compiling class HemoFlow.NetworkCenter
+Compiling class HemoFlow.Outbox
+Compiling class HemoFlow.Partner
+Compiling class HemoFlow.SystemConfig
+Compiling class HemoFlow.Transfer
+Compiling class HemoFlow.User
+Compiling class HemoFlow.WorkflowLink
+Compiling class HemoFlow.DecisionContext
+Compiling class HemoFlow.PendingInvitation
+Compiling table HemoFlow.User
+Compiling table HemoFlow.ApprovalBPL
+Compiling table HemoFlow.ApprovalBPL_MessagesReceived
+Compiling table HemoFlow.ApprovalBPL_MessagesSent
+Compiling table HemoFlow.ApprovalBPL__SynchronizedResponses
+Compiling table HemoFlow.Campaign
+Compiling table HemoFlow.CampaignBPL
+Compiling table HemoFlow.CampaignBPL_MessagesReceived
+Compiling table HemoFlow.CampaignBPL_MessagesSent
+Compiling table HemoFlow.CampaignBPL__SynchronizedResponses
+Compiling table HemoFlow.CampaignExperience
+Compiling table HemoFlow.Command
+Compiling table HemoFlow.ConsumptionDaily
+Compiling table HemoFlow.DecisionAudit
+Compiling table HemoFlow.DecisionBPL
+Compiling table HemoFlow.DecisionBPL_MessagesReceived
+Compiling table HemoFlow.DecisionBPL_MessagesSent
+Compiling table HemoFlow.DecisionBPL__SynchronizedResponses
+Compiling table HemoFlow.DecisionContext
+Compiling table HemoFlow.DemandFeature
+Compiling table HemoFlow.DemoRun
+Compiling table HemoFlow.DonorContact
+Compiling table HemoFlow.EventAudit
+Compiling table HemoFlow.InvitationLedger
+Compiling table HemoFlow.Message
+Compiling table HemoFlow.NetworkCenter
+Compiling table HemoFlow.Outbox
+Compiling table HemoFlow.Partner
+Compiling table HemoFlow.PendingInvitation
+Compiling table HemoFlow.Response
+Compiling table HemoFlow.SystemConfig
+Compiling table HemoFlow.Transfer
+Compiling table HemoFlow.TransferBPL
+Compiling table HemoFlow.TransferBPL_MessagesReceived
+Compiling table HemoFlow.TransferBPL_MessagesSent
+Compiling table HemoFlow.TransferBPL__SynchronizedResponses
+Compiling table HemoFlow.WorkflowLink
+Compiling routine HemoFlow.AIHubDecisionOperation.1
+Compiling routine HemoFlow.AIReadOperation.1
+Compiling routine HemoFlow.ApprovalBPL.1
+Compiling routine HemoFlow.ApprovalBPLMessagesReceived.1
+Compiling routine HemoFlow.ApprovalBPLMessagesSent.1
+Compiling routine HemoFlow.ApprovalBPLSynchronizedResponses.1
+Compiling routine HemoFlow.Bootstrap.1
+Compiling routine HemoFlow.CampaignBPL.1
+Compiling routine HemoFlow.CampaignBPLMessagesReceived.1
+Compiling routine HemoFlow.CampaignBPLMessagesSent.1
+Compiling routine HemoFlow.CampaignBPLSynchronizedResponses.1
+Compiling routine HemoFlow.CampaignExperience.1
+Compiling routine HemoFlow.ConsumptionDaily.1
+Compiling routine HemoFlow.DecisionBPL.1
+Compiling routine HemoFlow.DecisionBPLMessagesReceived.1
+Compiling routine HemoFlow.DecisionBPLMessagesSent.1
+Compiling routine HemoFlow.DecisionBPLSynchronizedResponses.1
+Compiling routine HemoFlow.DecisionTools.1
+Compiling routine HemoFlow.DemandFeature.1
+Compiling routine HemoFlow.DomainOperation.1
+Compiling routine HemoFlow.ExpirationService.1
+Compiling routine HemoFlow.ExpirationTask.1
+Compiling routine HemoFlow.FHIRTransferOperation.1
+Compiling routine HemoFlow.FederatedInventoryOperation.1
+Compiling routine HemoFlow.InventoryEventService.1
+Compiling routine HemoFlow.Message.1
+Compiling routine HemoFlow.Production.1
+Compiling routine HemoFlow.Record.1
+Compiling routine HemoFlow.Response.1
+Compiling routine HemoFlow.Runtime.1
+Compiling routine HemoFlow.TransferBPL.1
+Compiling routine HemoFlow.TransferBPLMessagesReceived.1
+Compiling routine HemoFlow.TransferBPLMessagesSent.1
+Compiling routine HemoFlow.TransferBPLSynchronizedResponses.1
+Compiling routine HemoFlow.Workflow.1
+Compiling routine HemoFlow.Campaign.1
+Compiling routine HemoFlow.Command.1
+Compiling routine HemoFlow.DecisionAudit.1
+Compiling routine HemoFlow.DemoRun.1
+Compiling routine HemoFlow.DonorContact.1
+Compiling routine HemoFlow.EventAudit.1
+Compiling routine HemoFlow.Expirable.1
+Compiling routine HemoFlow.InvitationLedger.1
+Compiling routine HemoFlow.NetworkCenter.1
+Compiling routine HemoFlow.Outbox.1
+Compiling routine HemoFlow.Partner.1
+Compiling routine HemoFlow.SystemConfig.1
+Compiling routine HemoFlow.Transfer.1
+Compiling routine HemoFlow.User.1
+Compiling routine HemoFlow.WorkflowLink.1
+Compiling routine HemoFlow.DecisionContext.1
+Compiling routine HemoFlow.PendingInvitation.1
+Compiling class HemoFlow.ApprovalBPL.Context
+Compiling class HemoFlow.ApprovalBPL.Thread1
+Compiling class HemoFlow.CampaignBPL.Context
+Compiling class HemoFlow.CampaignBPL.Thread1
+Compiling class HemoFlow.DecisionBPL.Context
+Compiling class HemoFlow.DecisionBPL.Thread1
+Compiling class HemoFlow.TransferBPL.Context
+Compiling class HemoFlow.TransferBPL.Thread1
+Compiling table HemoFlow_ApprovalBPL.Context
+Compiling table HemoFlow_ApprovalBPL.Context__ResponseHandlers
+Compiling table HemoFlow_ApprovalBPL.Thread1
+Compiling table HemoFlow_ApprovalBPL.Thread1__ChildThreads
+Compiling table HemoFlow_ApprovalBPL.Thread1__PendingResponses
+Compiling table HemoFlow_CampaignBPL.Context
+Compiling table HemoFlow_CampaignBPL.Context__ResponseHandlers
+Compiling table HemoFlow_CampaignBPL.Thread1
+Compiling table HemoFlow_CampaignBPL.Thread1__ChildThreads
+Compiling table HemoFlow_CampaignBPL.Thread1__PendingResponses
+Compiling table HemoFlow_DecisionBPL.Context
+Compiling table HemoFlow_DecisionBPL.Context__ResponseHandlers
+Compiling table HemoFlow_DecisionBPL.Thread1
+Compiling table HemoFlow_DecisionBPL.Thread1__ChildThreads
+Compiling table HemoFlow_DecisionBPL.Thread1__PendingResponses
+Compiling table HemoFlow_TransferBPL.Context
+Compiling table HemoFlow_TransferBPL.Context__ResponseHandlers
+Compiling table HemoFlow_TransferBPL.Thread1
+Compiling table HemoFlow_TransferBPL.Thread1__ChildThreads
+Compiling table HemoFlow_TransferBPL.Thread1__PendingResponses
+Compiling routine HemoFlow.ApprovalBPL.Context.1
+Compiling routine HemoFlow.ApprovalBPL.ContextResponseHandlers.1
+Compiling routine HemoFlow.ApprovalBPL.Thread1.1
+Compiling routine HemoFlow.ApprovalBPL.Thread1ChildThreads.1
+Compiling routine HemoFlow.ApprovalBPL.Thread1PendingResponses.1
+Compiling routine HemoFlow.CampaignBPL.Context.1
+Compiling routine HemoFlow.CampaignBPL.ContextResponseHandlers.1
+Compiling routine HemoFlow.CampaignBPL.Thread1.1
+Compiling routine HemoFlow.CampaignBPL.Thread1ChildThreads.1
+Compiling routine HemoFlow.CampaignBPL.Thread1PendingResponses.1
+Compiling routine HemoFlow.DecisionBPL.Context.1
+Compiling routine HemoFlow.DecisionBPL.ContextResponseHandlers.1
+Compiling routine HemoFlow.DecisionBPL.Thread1.1
+Compiling routine HemoFlow.DecisionBPL.Thread1ChildThreads.1
+Compiling routine HemoFlow.DecisionBPL.Thread1PendingResponses.1
+Compiling routine HemoFlow.TransferBPL.Context.1
+Compiling routine HemoFlow.TransferBPL.ContextResponseHandlers.1
+Compiling routine HemoFlow.TransferBPL.Thread1.1
+Compiling routine HemoFlow.TransferBPL.Thread1ChildThreads.1
+Compiling routine HemoFlow.TransferBPL.Thread1PendingResponses.1
+Compilation finished successfully in 4.092s.
+
+[USER|hemoflow]	Compile SUCCESS
+[USER|hemoflow]	Activate START
+[USER|hemoflow]	Configure START
+[USER|hemoflow]	Configure SUCCESS
+Seeding update steps for module = hemoflow, for version = 0.1.0
+
+[USER|hemoflow]	Activate SUCCESS
+USER>
+IPM_APPLICATION_CLASSES 1
+
+USER>

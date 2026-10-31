@@ -1,0 +1,3 @@
+{% if demo and user.role=='admin' and demo_runs %}
+<section class="card"><h2>{{ t('copy.049') }}</h2><p>{{ t('copy.050') }} {{ now }}{{ t('copy.051') }}</p><form class="inline" method="post" action="{{ request.script_root }}/api/demo/restore"><input type="hidden" name="csrf" value="{{ csrf }}"><button>{{ t('copy.052') }}</button></form><form class="inline" method="post" action="{{ request.script_root }}/api/demo/advance"><input type="hidden" name="csrf" value="{{ csrf }}"><input type="hidden" name="hours" value="25"><button>{{ t('copy.053') }}</button></form><small>{{ t('copy.054') }}</small></section>
+{% endif %}

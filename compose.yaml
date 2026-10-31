@@ -1,0 +1,63 @@
+name: hemoflow
+services:
+  iris:
+    build:
+      context: .
+      args:
+        IRIS_IMAGE: ${IRIS_IMAGE:-iris-community:2026.3.0AI.154.0}
+    image: hemoflow:build154
+    container_name: hemoflow-app
+    init: true
+    ports: ["127.0.0.1:52774:52773"]
+    environment:
+      ISC_DATA_DIRECTORY: /durable/iris
+      HEMOFLOW_DEMO: ${HEMOFLOW_DEMO:-0}
+    volumes:
+      - iris-data:/durable
+      - ./.env:/opt/hemoflow/.env:ro
+      - embeddings:/durable/embeddings
+    command: ["--after", "/opt/hemoflow/tools/bootstrap.sh"]
+    healthcheck:
+      test: ["CMD-SHELL", "test -f /tmp/hemoflow-ready && iris qlist IRIS | grep -q running"]
+      interval: 15s
+      timeout: 5s
+      retries: 20
+    depends_on:
+      center-a: {condition: service_healthy}
+      center-b: {condition: service_healthy}
+      center-c: {condition: service_healthy}
+  center-a:
+    build:
+      context: .
+      dockerfile: simulators/Dockerfile
+    image: hemoflow-center:build154
+    environment: &center-env
+      CENTER_ID: HEMO-A
+      CENTER_TOKEN: ${HEMOFLOW_CENTER_TOKEN:?Configure .env first}
+      HEMOFLOW_DEMO: ${HEMOFLOW_DEMO:-0}
+    volumes: ["center-a:/data"]
+    healthcheck: &center-health
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+  center-b:
+    image: hemoflow-center:build154
+    environment:
+      <<: *center-env
+      CENTER_ID: HEMO-B
+    volumes: ["center-b:/data"]
+    healthcheck: *center-health
+  center-c:
+    image: hemoflow-center:build154
+    environment:
+      <<: *center-env
+      CENTER_ID: HEMO-C
+    volumes: ["center-c:/data"]
+    healthcheck: *center-health
+volumes:
+  iris-data:
+  embeddings:
+  center-a:
+  center-b:
+  center-c:

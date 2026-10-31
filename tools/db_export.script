@@ -1,0 +1,3 @@
+zn "%SYS"
+do $system.OBJ.Export("SYS.Database.cls","/opt/hemoflow/docs/build154-database.xml")
+halt

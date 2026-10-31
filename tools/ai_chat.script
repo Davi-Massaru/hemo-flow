@@ -1,0 +1,12 @@
+zn "USER"
+set config=##class(%DynamicObject).%FromJSON(##class(HemoFlow.AIHubDecisionOperation).Configuration())
+set provider=##class(%AI.Provider).Create("openai",config)
+set agent=##class(%AI.Agent).%New(provider)
+set agent.Model=config.%Get("model"),agent.MaxIterations=4
+set agent.SystemPrompt="Reply with compact JSON only."
+write "AI_PLAIN init ",agent.%Init(),!
+set session=agent.CreateSession({"timeout_ms":30000,"max_tokens":50})
+write "AI_PLAIN chat",!
+set result=agent.Chat(session,"Return an object with status equal to ok.")
+write "AI_PLAIN result ",result.Content,!
+halt

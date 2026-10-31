@@ -1,0 +1,9 @@
+{
+  "non_o_transfer": "PASSED",
+  "delivered_id": "TR-8e09dfe4-0ec2-433c-859a-769bd7e4843b",
+  "received": 7,
+  "o_negative_unchanged": 8,
+  "completed_campaign_indexed": true,
+  "pending_campaign_decision": "fadd3c20-f07f-4d5a-b3c6-1987a08cdca0",
+  "pending_a_positive_transfer": "TR-b5197582-c7a3-4c5e-8ca9-1c62e4b6a85d"
+}

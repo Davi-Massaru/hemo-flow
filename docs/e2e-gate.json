@@ -1,0 +1,17 @@
+[
+  {
+    "case": "TRANSFER",
+    "status": "PASSED",
+    "decision_id": "80c2ba0f-ef6a-42e2-a44d-00a98098bcb5"
+  },
+  {
+    "case": "CAMPAIGN",
+    "status": "PASSED",
+    "decision_id": "c376d7ca-cf84-4d7a-848f-e61611e57309"
+  },
+  {
+    "case": "NO_ACTION",
+    "status": "PASSED",
+    "decision_id": "a4334e1f-b69e-4328-a716-766749537f05"
+  }
+]

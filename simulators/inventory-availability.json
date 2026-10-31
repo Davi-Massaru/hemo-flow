@@ -1,0 +1,40 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "inventory-availability",
+  "url": "https://hemoflow.example/fhir/OperationDefinition/inventory-availability",
+  "version": "1.0.0",
+  "name": "HemoFlowInventoryAvailability",
+  "status": "active",
+  "kind": "operation",
+  "description": "HemoFlow custom read-only aggregate inventory availability. This is not a standard HL7 inventory operation. No reservation is made.",
+  "code": "inventory-availability",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "affectsState": false,
+  "parameter": [
+    {"name":"requestingCenterId","use":"in","min":1,"max":"1","type":"string"},
+    {"name":"componentCode","use":"in","min":1,"max":"1","type":"code"},
+    {"name":"bloodType","use":"in","min":1,"max":"1","type":"code"},
+    {"name":"horizonDays","use":"in","min":1,"max":"1","type":"integer"},
+    {"name":"needBy","use":"in","min":1,"max":"1","type":"dateTime"},
+    {"name":"centerId","use":"out","min":1,"max":"1","type":"string"},
+    {"name":"componentCode","use":"out","min":1,"max":"1","type":"code"},
+    {"name":"bloodType","use":"out","min":1,"max":"1","type":"code"},
+    {"name":"availableUnits","use":"out","min":1,"max":"1","type":"integer"},
+    {"name":"transferableUnits","use":"out","min":1,"max":"1","type":"integer"},
+    {"name":"observedAt","use":"out","min":1,"max":"1","type":"instant"},
+    {"name":"dataVersion","use":"out","min":1,"max":"1","type":"string"},
+    {"name":"responseStatus","use":"out","min":1,"max":"1","type":"code"},
+    {"name":"handlingLeadTimeHours","use":"out","min":1,"max":"1","type":"integer"},
+    {"name":"expiryBucket","use":"out","min":0,"max":"*","part":[
+      {"name":"expiresAt","use":"out","min":1,"max":"1","type":"dateTime"},
+      {"name":"daysUntilExpiry","use":"out","min":1,"max":"1","type":"integer"},
+      {"name":"units","use":"out","min":1,"max":"1","type":"integer"}
+    ]},
+    {"name":"usableExpiryBucket","use":"out","min":0,"max":"*","part":[
+      {"name":"expiresAt","use":"out","min":1,"max":"1","type":"dateTime"},
+      {"name":"units","use":"out","min":1,"max":"1","type":"integer"}
+    ]}
+  ]
+}

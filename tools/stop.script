@@ -1,0 +1,4 @@
+zn "USER"
+set sc=##class(Ens.Director).GetProductionStatus(.name,.state)
+if $get(name)="HemoFlow.Production" { write ##class(Ens.Director).StopProduction(10,1),! }
+halt

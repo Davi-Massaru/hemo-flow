@@ -1,0 +1,54 @@
+[
+  {
+    "case": "SEED_COUNTS_AND_IDEMPOTENCY",
+    "status": "PASSED"
+  },
+  {
+    "case": "REQUEST_TRANSFER_FULL_WORKFLOW",
+    "status": "PASSED",
+    "correlation_id": "d098ade9-017f-4719-a96d-d63c90879a8a",
+    "received": 12
+  },
+  {
+    "case": "REQUEST_CAMPAIGN_FULL_WORKFLOW",
+    "status": "PASSED",
+    "correlation_id": "ff2d9c3f-bf99-43f0-a1df-feea8b73ca1b",
+    "released": 20
+  },
+  {
+    "case": "NO_ACTION",
+    "status": "PASSED"
+  },
+  {
+    "case": "OFFLINE",
+    "status": "PASSED"
+  },
+  {
+    "case": "STOCKOUT",
+    "status": "PASSED"
+  },
+  {
+    "case": "EXPIRY_BLOCKS_TRANSFER",
+    "status": "PASSED"
+  },
+  {
+    "case": "DECLINED",
+    "status": "PASSED"
+  },
+  {
+    "case": "EXPIRED_INVITE",
+    "status": "PASSED"
+  },
+  {
+    "case": "AUTOMATIC_TTL_24H_TWO_CLASSES_AND_LATE_409",
+    "status": "PASSED"
+  },
+  {
+    "case": "SINGLE_EXPIRATION_REASSESSMENT",
+    "status": "PASSED"
+  },
+  {
+    "case": "SAFE_RESTORE_PRESERVES_AUDIT_AND_LEDGER",
+    "status": "PASSED"
+  }
+]

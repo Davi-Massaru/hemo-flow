@@ -1,0 +1,5 @@
+zn "USER"
+write $zversion,!
+do $system.OBJ.Load("/opt/hemoflow/tools/Probe.cls","ck")
+do ##class(HemoFlow.Probe).Run()
+halt

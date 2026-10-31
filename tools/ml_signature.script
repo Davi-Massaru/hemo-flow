@@ -1,0 +1,4 @@
+zn "USER"
+do ##class(HemoFlow.Probe).File("/opt/hemoflow/tools/ml_signature.py")
+zprint %PredictAll^%ML.AutoML.TrainedModel.1:10
+halt
